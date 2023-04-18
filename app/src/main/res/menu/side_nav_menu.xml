@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/nav_header">
+
+    <item android:title="@string/store_preferences">
+        <menu>
+        <item
+        android:id="@+id/nav_rating"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:title="@string/rate_our_app" />
+        <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/ic_baseline_feedback_25"
+        android:title="@string/send_feedback" />
+        </menu>
+    </item>
+
+        <item android:title="@string/community_space">
+            <menu>
+
+                <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/ic_baseline_web_24"
+                android:title="@string/visit_our_website" />
+
+                />
+            </menu>
+        </item>
+
+    <item android:title="@string/user_preferences">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_edit_profile"
+                android:title="@string/edit_profile"
+                android:icon="@drawable/ic_baseline_settings_24" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="@string/logout"
+                android:icon="@drawable/ic_baseline_logout_24"/>
+            <item
+                android:id="@+id/nav_delete_profile"
+                android:title="@string/delete_my_account"
+                android:icon="@drawable/ic_baseline_delete_24" />
+        </menu>
+    </item>
+
+</menu>
+

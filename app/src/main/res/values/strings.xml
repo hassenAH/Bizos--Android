@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Rhino Real Estates </string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="nextBtn" translatable="false">Next</string>
+    <string name="SkipBtn" translatable="false">Skip</string>
+    <string name="hint" translatable="false">hint</string>
+    <string name="loginTxt" translatable="false">Login</string>
+    <string name="PasswordTxt">Password</string>
+    <string name="UsernameTxt">Username</string>
+    <string name="EmailTxt" translatable="false">Email</string>
+    <string name="PhoneTxt">Phone</string>
+    <string name="create_accountBtn">Create Account</string>
+    <string name="DescGuide">Come to us for the keys, and live a life with ease</string>
+    <string name="TitleGuide">Welcome to Rhino Estate</string>
+    <string name="registerTV">Create account!</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="addTxt">Add</string>
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+    <string name="AdressTxt" translatable="false">Adress</string>
+    <string name="Forget">Forget Password</string>
+    <string name="CodeTxt" translatable="false">Code</string>
+    <string name="VerifCode" translatable="false">Change Password</string>
+    <string name="code" translatable="false">Send Code</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_code">Code</string>
+    <string name="accueilTxt">Feed</string>
+
+    <string name="modifier">update</string>
+    <string name="title_activity_ingredients">ingredients_Activity</string>
+    <string name="BASE_URL">http://127.0.0.1:9090/api/</string>
+
+    <string name="hello_blog_frag" translatable="false">hello blog frag</string>
+    <string name="hello_profile_fragment" translatable="false">Hello profile fragment</string>
+    <string name="updateBTN">update Profile</string>
+    <string name="authorusername" translatable="false">AuthorUsername</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="ingredient_name" translatable="false">IngredientName</string>
+    <string name="loading_text">Loading…</string>
+    <string name="password_holder" translatable="false">*************</string>
+    <string name="phone_value" translatable="false">phoneValue</string>
+    <string name="search">Search</string>
+    <string name="add_ingredients">Add ingredients</string>
+
+    <string name="upvote_number">50</string>
+
+
+
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+
+
+    <string name="MeasureTxt">Mesure</string>
+
+
+    <string name="profileimage" translatable="false">profileImage</string>
+
+
+
+    <string name="rate_our_app">Rate Our App</string>
+
+
+    <string name="send_feedback">Send feedback</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+
+
+    <string name="store_preferences">Store preferences</string>
+    <string name="visit_our_website">Visit our website</string>
+    <string name="community_space">Community space</string>
+    <string name="edit_profile">Account settings</string>
+    <string name="logout">Logout</string>
+    <string name="user_preferences">User preferences</string>
+    <string name="RepeatPasswordTxt" translatable="false">Repeat Password</string>
+    <string name="rechercheTxt">Search</string>
+    <string name="about" translatable="false">About</string>
+    <string name="dateComment">10</string>
+    <string name="about_description" translatable="false">Rhino estates is a smartphone application that gives you shelter</string>
+
+
+    <string name="hello">"Hello, "</string>
+
+
+</resources>

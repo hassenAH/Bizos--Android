@@ -1,0 +1,4583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Dolphin | 2021.3.1 Patch 1">
+
+    <issue
+        id="ScopedStorage"
+        message="WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This androidx.constraintlayout.widget.ConstraintLayout should use `android:layout_height=&quot;wrap_content&quot;`">
+        <location
+            file="src\main\res\layout\fragment_home.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.6.1 is available: 1.6.4">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-core than 1.5.2 is available: 1.6.4">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="ExtraText"
+        message="Unexpected text found in menu file: &quot;/>&quot;">
+        <location
+            file="src\main\res\menu\bottom_nav.xml"
+            line="19"/>
+    </issue>
+
+    <issue
+        id="ExtraText"
+        message="Unexpected text found in drawable file: &quot;=&quot;">
+        <location
+            file="src\main\res\drawable\round_button_upvote.xml"
+            line="5"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location
+            file="src\main\res\layout\nav_header.xml"
+            line="39"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="213"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="256"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="271"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="313"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="329"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="371"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="387"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="429"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="444"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="487"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="501"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="543"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="558"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="600"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="615"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="657"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="671"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="713"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="727"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="769"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="784"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="827"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="841"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="884"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="899"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="941"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="956"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="998"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1014"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1056"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1071"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1113"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1128"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1170"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1185"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1227"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1242"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1284"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1299"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1341"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="214"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="257"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="272"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="314"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="330"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="372"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="388"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="430"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="445"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="488"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="502"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="544"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="559"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="601"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="616"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="658"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="672"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="714"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="728"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="770"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="785"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="828"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="842"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="885"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="900"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="942"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="957"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="999"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1015"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1057"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1072"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1114"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1129"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1171"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1186"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1228"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1243"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1285"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1300"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1342"/>
+    </issue>
+
+    <issue
+        id="ExportedReceiver"
+        message="Exported receiver does not require permission">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="InsecureBaseConfiguration"
+        message="Insecure Base Configuration">
+        <location
+            file="src\main\res\xml\network_security_config.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 30. Merge all the resources in this folder into `drawable`.">
+        <location
+            file="src\main\res\drawable-v24"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 30. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <location
+            file="src\main\res\mipmap-anydpi-v26"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="46"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="76"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\activity_ingredients.xml"
+            line="9"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\fragment_basket.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="57"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="79"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="src\main\res\layout\fragment_recette_user.xml"
+            line="39"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (904 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\ic_baseline_settings_24.xml"
+            line="4"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\activity_recipes_list.xml"
+            line="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/rosybrown` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\activity_splash_screen.xml"
+            line="7"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/rosybrown` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\categorie_row.xml"
+            line="7"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/za3ka` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\fragment_guide_page_one.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/za3ka` with a theme that also paints a background (inferred theme is `@style/Theme.EasyKitchen`)">
+        <location
+            file="src\main\res\layout\fragment_guide_page_two.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_category` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_category.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_category_recipes_filter` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_food_recipe` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_food_recipe.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_ingredient_filter_food` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_ingredient_filter_food.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_ingredients` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_ingredients.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_my_recipes` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_my_recipes.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_my_single_recipe` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_recette` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_recette_form` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_recette_form_edit` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_recipes_list` appears to be unused">
+        <location
+            file="src\main\res\layout\activity_recipes_list.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.add_button` appears to be unused">
+        <location
+            file="src\main\res\drawable\add_button.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.add_icon` appears to be unused">
+        <location
+            file="src\debug\res\drawable-xhdpi\add_icon.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ail` appears to be unused">
+        <location
+            file="src\main\res\drawable\ail.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ail_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\ail_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.app_icon` appears to be unused">
+        <location
+            file="src\main\res\drawable\app_icon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.area_card_background` appears to be unused">
+        <location
+            file="src\main\res\drawable\area_card_background.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.area_item` appears to be unused">
+        <location
+            file="src\main\res\layout\area_item.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.artichoke` appears to be unused">
+        <location
+            file="src\main\res\drawable\artichoke.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.artichoke_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\artichoke_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.badge__shape` appears to be unused">
+        <location
+            file="src\main\res\drawable\badge__shape.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.blog_item` appears to be unused">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.broccoli` appears to be unused">
+        <location
+            file="src\main\res\drawable\broccoli.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.broccoli_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\broccoli_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.categorie_row` appears to be unused">
+        <location
+            file="src\main\res\layout\categorie_row.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.chili_pepper` appears to be unused">
+        <location
+            file="src\main\res\drawable\chili_pepper.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.chili_pepper_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\chili_pepper_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.circle` appears to be unused">
+        <location
+            file="src\main\res\drawable\circle.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.clock` appears to be unused">
+        <location
+            file="src\main\res\drawable\clock.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.clock_icon` appears to be unused">
+        <location
+            file="src\main\res\drawable\clock_icon.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.purple_500` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="4"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.yellow` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.teal_700` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.blackText` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.background` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black_gradient1` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black_gradient2` appears to be unused">
+        <location
+            file="src\main\res\values\colors.xml"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.comment_list` appears to be unused">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.corn` appears to be unused">
+        <location
+            file="src\main\res\drawable\corn.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.corn_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\corn_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.cucumber` appears to be unused">
+        <location
+            file="src\main\res\drawable\cucumber.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.cucumber_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\cucumber_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.custom_rectange` appears to be unused">
+        <location
+            file="src\main\res\drawable\custom_rectange.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.dialog_searchable_spinner` appears to be unused">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.difficulty` appears to be unused">
+        <location
+            file="src\main\res\drawable\difficulty.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.app_bar_height` appears to be unused">
+        <location
+            file="src\main\res\values\dimens.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.fab_margin` appears to be unused">
+        <location
+            file="src\main\res\values\dimens.xml"
+            line="3"/>
+        <location
+            file="src\main\res\values-land\dimens.xml"
+            line="2"/>
+        <location
+            file="src\main\res\values-w1240dp\dimens.xml"
+            line="2"/>
+        <location
+            file="src\main\res\values-w600dp\dimens.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.text_margin` appears to be unused">
+        <location
+            file="src\main\res\values\dimens.xml"
+            line="4"/>
+        <location
+            file="src\main\res\values-land\dimens.xml"
+            line="3"/>
+        <location
+            file="src\main\res\values-w600dp\dimens.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.downvote` appears to be unused">
+        <location
+            file="src\main\res\drawable\downvote.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eggplant` appears to be unused">
+        <location
+            file="src\main\res\drawable\eggplant.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eggplant_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\eggplant_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.food_item` appears to be unused">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.menu.food_menu` appears to be unused">
+        <location
+            file="src\main\res\menu\food_menu.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_basket` appears to be unused">
+        <location
+            file="src\main\res\layout\fragment_basket.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_home` appears to be unused">
+        <location
+            file="src\main\res\layout\fragment_home.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_recette_user` appears to be unused">
+        <location
+            file="src\main\res\layout\fragment_recette_user.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.french_fries_with_cheeseburger` appears to be unused">
+        <location
+            file="src\main\res\drawable\french_fries_with_cheeseburger.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.glass` appears to be unused">
+        <location
+            file="src\main\res\drawable\glass.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.gradient_black` appears to be unused">
+        <location
+            file="src\main\res\drawable\gradient_black.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.green_packoy` appears to be unused">
+        <location
+            file="src\main\res\drawable\green_packoy.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.green_packoy_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\green_packoy_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.hamburger` appears to be unused">
+        <location
+            file="src\main\res\drawable-v24\hamburger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_access_time_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_access_time_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_add_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_add_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_arrow_drop_down_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_arrow_drop_down_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_article_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_article_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_block_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_block_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_close_16` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_close_16.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_delete_16` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_delete_16.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_edit_16` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_edit_16.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_favorite_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_favorite_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_feedback_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_feedback_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_inbox_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_inbox_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_manage_search_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_manage_search_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_place_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_place_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_remove_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_remove_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_search_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_search_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_baseline_star_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_baseline_star_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_icon_background` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_launcher_icon_background.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_outline_article_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_outline_article_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_outline_person_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_outline_person_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_outline_thumb_down_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_outline_thumb_down_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_outline_thumb_up_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_outline_thumb_up_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_round_cell_wifi_24` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_round_cell_wifi_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.image_button_recette` appears to be unused">
+        <location
+            file="src\main\res\drawable-v24\image_button_recette.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.image_select_bg` appears to be unused">
+        <location
+            file="src\main\res\drawable\image_select_bg.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.ingredient_item` appears to be unused">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.menu.ingredients_cart_menu` appears to be unused">
+        <location
+            file="src\main\res\menu\ingredients_cart_menu.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.menu.ingredients_menu` appears to be unused">
+        <location
+            file="src\main\res\menu\ingredients_menu.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.laitue` appears to be unused">
+        <location
+            file="src\main\res\drawable\laitue.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.laitue_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\laitue_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.leaf` appears to be unused">
+        <location
+            file="src\main\res\drawable-v24\leaf.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.leek` appears to be unused">
+        <location
+            file="src\main\res\drawable\leek.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.leek_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\leek_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.list_ingredient` appears to be unused">
+        <location
+            file="src\main\res\layout\list_ingredient.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.list_mesures` appears to be unused">
+        <location
+            file="src\main\res\layout\list_mesures.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.list_row` appears to be unused">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.long_rounded_button` appears to be unused">
+        <location
+            file="src\main\res\drawable\long_rounded_button.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.long_rounded_button_colored` appears to be unused">
+        <location
+            file="src\main\res\drawable\long_rounded_button_colored.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.mekla` appears to be unused">
+        <location
+            file="src\main\res\drawable\mekla.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.meklao` appears to be unused">
+        <location
+            file="src\main\res\drawable\meklao.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.nav_item_color_selector` appears to be unused">
+        <location
+            file="src\main\res\drawable\nav_item_color_selector.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ojja` appears to be unused">
+        <location
+            file="src\main\res\drawable\ojja.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.okra` appears to be unused">
+        <location
+            file="src\main\res\drawable\okra.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.okra_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\okra_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.onion` appears to be unused">
+        <location
+            file="src\main\res\drawable\onion.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.onion_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\onion_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.packoy` appears to be unused">
+        <location
+            file="src\main\res\drawable\packoy.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.packoy_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\packoy_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.peas` appears to be unused">
+        <location
+            file="src\main\res\drawable\peas.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.peas_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\peas_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.people` appears to be unused">
+        <location
+            file="src\main\res\drawable\people.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.person_icon` appears to be unused">
+        <location
+            file="src\main\res\drawable\person_icon.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.potato_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\potato_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.potatoe` appears to be unused">
+        <location
+            file="src\main\res\drawable\potatoe.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.pumpkin` appears to be unused">
+        <location
+            file="src\main\res\drawable\pumpkin.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.pumpkin_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\pumpkin_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.radditsh` appears to be unused">
+        <location
+            file="src\main\res\drawable\radditsh.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.radditsh_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\radditsh_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.recommended_row` appears to be unused">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.round_button_upvote` appears to be unused">
+        <location
+            file="src\main\res\drawable\round_button_upvote.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_button` appears to be unused">
+        <location
+            file="src\main\res\drawable\rounded_button.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_button_red` appears to be unused">
+        <location
+            file="src\main\res\drawable\rounded_button_red.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_button_yellow` appears to be unused">
+        <location
+            file="src\main\res\drawable\rounded_button_yellow.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_edittext` appears to be unused">
+        <location
+            file="src\main\res\drawable-v24\rounded_edittext.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_layout` appears to be unused">
+        <location
+            file="src\main\res\drawable\rounded_layout.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.shroom` appears to be unused">
+        <location
+            file="src\main\res\drawable\shroom.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.shroom_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\shroom_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_blank_fragment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hint` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.addTxt` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.title_activity_home` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.first_fragment_label` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.second_fragment_label` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.next` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.previous` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_first_fragment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="24"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_second_fragment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.category` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="28"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.salade` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.expertRecette` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="30"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ingredients` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="32"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.instructions` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.longLorem` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.modifier` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.title_activity_ingredients` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="37"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.BASE_URL` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="38"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.action_settings` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="40"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_food_fragment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_blog_frag` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="42"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_profile_fragment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.authorusername` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="45"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.recommended_recipes` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="46"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ingredient_name` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password_holder` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="50"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="52"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_ingredients` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="53"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.food_toobar_title` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="54"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.food_recipe` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.upvote_number` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="57"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.commentTitleEdit` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="60"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.my_recipe` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.recetteFormTitle` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.recetteFormEditTitle` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="65"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.remove` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="66"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.MeasureTxt` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="69"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.measures` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="71"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.meals_category_filter` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.greetings` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="74"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.healthy_mode` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_recipes_found` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="85"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ingredients_basket` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="86"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.clear_cart` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="87"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_food` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.rechercheTxt` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="98"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ojja` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.reccete_type` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="100"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ajoutRecette` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="101"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.titreRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="102"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dureeRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="103"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.personRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.difficultyRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="105"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.bioRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="106"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.descRecetteInput` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="107"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ajouter` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="108"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.comment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="109"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.commentTitle` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="110"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.blog_title` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="111"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.recomnandedRecette` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="112"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.accueilTxt` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="113"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dateComment` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="116"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.veganRecette` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="117"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="118"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_ingredients_found` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="119"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_ingredients_in_basket` appears to be unused">
+        <location
+            file="src\main\res\values\strings.xml"
+            line="120"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.taswira` appears to be unused">
+        <location
+            file="src\main\res\drawable\taswira.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Theme_EasyKitchen_NoActionBar` appears to be unused">
+        <location
+            file="src\main\res\values\themes.xml"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Theme_EasyKitchen_AppBarOverlay` appears to be unused">
+        <location
+            file="src\main\res\values\themes.xml"
+            line="38"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Theme_EasyKitchen_PopupOverlay` appears to be unused">
+        <location
+            file="src\main\res\values\themes.xml"
+            line="40"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.time` appears to be unused">
+        <location
+            file="src\main\res\drawable\time.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.tomtato` appears to be unused">
+        <location
+            file="src\main\res\drawable\tomtato.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.tomtato_grayscale` appears to be unused">
+        <location
+            file="src\main\res\drawable\tomtato_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upvote` appears to be unused">
+        <location
+            file="src\main\res\drawable\upvote.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upvote_icon` appears to be unused">
+        <location
+            file="src\main\res\drawable\upvote_icon.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `FrameLayout` parent is unnecessary">
+        <location
+            file="src\main\res\layout\fragment_home.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="TooManyViews"
+        message="`activity_recette_form.xml` has more than 80 views, bad for performance">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="889"/>
+    </issue>
+
+    <issue
+        id="TooManyViews"
+        message="`activity_recette_form_edit.xml` has more than 80 views, bad for performance">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="890"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        message="The `ic_launcher.webp` icon has identical contents in the following configuration folders: mipmap-hdpi, mipmap-mdpi">
+        <location
+            file="src\main\res\mipmap-mdpi\ic_launcher.webp"/>
+        <location
+            file="src\main\res\mipmap-hdpi\ic_launcher.webp"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ail.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\ail.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ail_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\ail_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/android_icon.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\android_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/app_icon.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\app_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/artichoke.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\artichoke.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/artichoke_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\artichoke_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/asset_2.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\asset_2.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/asset_3.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\asset_3.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/broccoli.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\broccoli.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/broccoli_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\broccoli_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/chili_pepper.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\chili_pepper.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/chili_pepper_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\chili_pepper_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/clock.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\clock.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/corn.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\corn.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/corn_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\corn_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cucumber.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\cucumber.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cucumber_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\cucumber_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/difficulty.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\difficulty.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/eggplant.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\eggplant.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/eggplant_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\eggplant_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/french_fries_with_cheeseburger.jpg` in densityless folder">
+        <location
+            file="src\main\res\drawable\french_fries_with_cheeseburger.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/glass.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\glass.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/green_packoy.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\green_packoy.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/green_packoy_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\green_packoy_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/image_select_bg.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\image_select_bg.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/laitue.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\laitue.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/laitue_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\laitue_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/leek.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\leek.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/leek_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\leek_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/mekla.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\mekla.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/meklao.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\meklao.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ojja.jpg` in densityless folder">
+        <location
+            file="src\main\res\drawable\ojja.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/okra.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\okra.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/okra_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\okra_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/onion.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\onion.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/onion_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\onion_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/packoy.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\packoy.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/packoy_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\packoy_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/peas.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\peas.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/peas_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\peas_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/people.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\people.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/picture.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\picture.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/potato_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\potato_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/potatoe.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\potatoe.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/pumpkin.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\pumpkin.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/pumpkin_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\pumpkin_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/radditsh.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\radditsh.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/radditsh_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\radditsh_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/shroom.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\shroom.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/shroom_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\shroom_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/taswira.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\taswira.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/time.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\time.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/tomtato.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\tomtato.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/tomtato_grayscale.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\tomtato_grayscale.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/za3ka.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\za3ka.png"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        message="Missing density variation folders in `src\debug\res`: drawable-hdpi, drawable-mdpi, drawable-xxhdpi">
+        <location
+            file="src\debug\res"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`">
+        <location
+            file="src\main\res\layout\activity_recipes_list.xml"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="202"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="212"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="246"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="279"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="335"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="206"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="216"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="250"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="283"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="339"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="394"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="90"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="101"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="87"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\list_ingredient.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="src\main\res\layout\list_mesures.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="AlwaysShowAction"
+        message="Prefer &quot;`ifRoom`&quot; instead of &quot;`always`&quot;">
+        <location
+            file="src\main\res\menu\ingredients_menu.xml"
+            line="10"/>
+        <location
+            file="src\main\res\menu\ingredients_menu.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\activity_edit_profile.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\activity_edit_profile.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\activity_edit_profile.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\activity_edit_profile.xml"
+            line="95"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\activity_recipes_list.xml"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="89"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_edit_profile.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Empty `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_food_recipe.xml"
+            line="37"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_guide.xml"
+            line="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_ingredients.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Empty `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_login.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="187"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="231"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="264"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="191"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="235"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="268"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="44"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="44"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\activity_splash_screen.xml"
+            line="11"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="30"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\categorie_row.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="69"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_basket.xml"
+            line="26"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_basket.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="85"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_recette_user.xml"
+            line="52"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="178"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="179"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Failed to load data&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_category_recipes_filter.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Recipe source&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_food_recipe.xml"
+            line="184"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TODO&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_login.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="201"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Mintues&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="211"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;2 Personnes&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="245"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Easy&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_my_single_recipe.xml"
+            line="278"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="205"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Mintues&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="215"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;2 Personnes&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="249"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Easy&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="282"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Submit&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette.xml"
+            line="403"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="214"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="252"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="272"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="309"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="330"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="367"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="388"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="425"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="445"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="483"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="502"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="539"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="559"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="596"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="616"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="653"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="672"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="709"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="728"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="765"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="785"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="823"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="842"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="879"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="900"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="937"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="957"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="994"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1015"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1052"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1072"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1109"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1129"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1166"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1186"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1223"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1243"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1280"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1300"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1337"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Remove&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1360"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Add&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="1370"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="215"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="253"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="273"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="310"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="331"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="368"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="389"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="426"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="446"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="484"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="503"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="540"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="560"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="597"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="617"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="654"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="673"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="710"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="729"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="766"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="786"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="824"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="843"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="880"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="901"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="938"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="958"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="995"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1016"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1053"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1073"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1110"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1130"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1167"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1187"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1224"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1244"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1281"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1301"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1338"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Remove&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1361"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Add&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="1371"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;50&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="60"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Ojja aux oeufs&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="78"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20 min - 30 min&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="89"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;min&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="100"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav.xml"
+            line="4"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Food&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;My basket&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav.xml"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Lounge&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;test&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="77"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;select an ingredient&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="14"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;search...&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\dialog_searchable_spinner.xml"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;CheeseBurger&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="50"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20min&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;usernameValue&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="40"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;emailValue&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_profile.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;No recipes found&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_recette_user.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Cart&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\ingredients_menu.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;2 Onions&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\list_ingredient.xml"
+            line="26"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;2 kilos&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\list_mesures.xml"
+            line="24"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Ojja aux oeufs&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20 min - 30 min&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="73"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Edit&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\profile_menu.xml"
+            line="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\profile_menu.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Ojja aux oeufs&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="78"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;20 min - 30 min&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="89"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\activity_recette_form.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\activity_recette_form_edit.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\food_item.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="35"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="35"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="50"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="50"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/blogAuthorImage&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="44"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/blogAuthorImage&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="44"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="58"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="58"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="69"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\blog_item.xml"
+            line="69"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/commentAuthorImage&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/commentAuthorImage&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\comment_list.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="19"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="19"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\ingredient_item.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\list_row.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="70"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\recommended_row.xml"
+            line="70"/>
+    </issue>
+
+</issues>
