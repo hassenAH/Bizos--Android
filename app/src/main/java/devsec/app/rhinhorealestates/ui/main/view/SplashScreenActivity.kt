@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageView
 import devsec.app.RhinhoRealEstates.R
-import devsec.app.rhinhorealestates.ui.main.view.GuideActivity
 
 @Suppress("DEPRECATION")
 @SuppressLint("CustomSplashScreen")
@@ -26,10 +25,10 @@ class SplashScreenActivity : AppCompatActivity() {
 
         handler = Handler()
 
-        val activity: Activity = GuideActivity()
+        val activity: Activity = LoginActivity()
 
         handler.postDelayed({
-            val intent = Intent(this, GuideActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)
