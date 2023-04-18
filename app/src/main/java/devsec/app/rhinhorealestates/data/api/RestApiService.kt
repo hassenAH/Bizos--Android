@@ -23,28 +23,28 @@ interface RestApiService {
     fun loginUser(@Body info: UserRequest): Call<ResponseBody>
 
     @Headers("Content-Type:application/json")
-    @POST("users")
+    @POST("user")
     fun registerUser(
         @Body info: User
     ): Call<ResponseBody>
 
     //*********************** User ***********************//
-    @GET("users")
+    @GET("user")
     fun getUsers(): Call<List<User>>
 
-    @POST("users/resetpassword")
+    @POST("user/resetpassword")
     fun verifcode(@Body code: CodeRequest): Call<Unit>
-    @POST("users/changepwd")
+    @POST("user/changepwd")
     fun changePass(@Body code: ChangeRequest): Call<Unit>
 
-    @POST("users/resetpwd")
+    @POST("user/resetpwd")
     fun generatecode(@Body email: EmailRequest): Call<Unit>
 
-    @GET("users/{id}")
+    @GET("user/{id}")
     fun getUser(@Path("id") id: String): Call<User>
 
     @Headers("Content-Type:application/json")
-    @PATCH("users/{id}")
+    @PATCH("user/{id}")
     fun updateUser(@Path("id") id: String, @Body user: User): Call<User>
 
     @DELETE("users/{id}")
@@ -77,7 +77,7 @@ interface RestApiService {
 class RetrofitInstance {
     companion object {
 
-        const val BASE_URL: String = "http://192.168.1.183:9090/api/"
+        const val BASE_URL: String = "http://192.168.1.168:5000/"
      // const val BASE_URL: String = "http://192.168.0.11:9090/api/"
 
 
