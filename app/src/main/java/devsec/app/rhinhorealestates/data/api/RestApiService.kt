@@ -1,6 +1,7 @@
 
 package devsec.app.rhinhorealestates.api
 
+import devsec.app.rhinhorealestates.data.api.ChangeRequest
 import devsec.app.rhinhorealestates.data.api.CodeRequest
 import devsec.app.rhinhorealestates.data.api.EmailRequest
 import devsec.app.rhinhorealestates.data.models.*
@@ -33,6 +34,8 @@ interface RestApiService {
 
     @POST("users/resetpassword")
     fun verifcode(@Body code: CodeRequest): Call<Unit>
+    @POST("users/resetpassword")
+    fun changePass(@Body code: ChangeRequest): Call<Unit>
 
     @POST("users/resetpwd")
     fun generatecode(@Body email: EmailRequest): Call<Unit>

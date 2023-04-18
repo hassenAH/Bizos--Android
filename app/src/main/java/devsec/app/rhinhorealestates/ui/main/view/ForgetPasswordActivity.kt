@@ -65,6 +65,7 @@ class ForgetPasswordActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     Toast.makeText(this@ForgetPasswordActivity, "Code sent to your email", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@ForgetPasswordActivity, CodeActivity::class.java)
+                    intent.putExtra("email", email)
                     startActivity(intent)
                     finish()
                 } else {
