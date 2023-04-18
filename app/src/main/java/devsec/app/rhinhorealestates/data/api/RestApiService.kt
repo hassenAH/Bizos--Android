@@ -19,7 +19,7 @@ interface RestApiService {
 
     //*********************** Sign up/in ***********************//
     @Headers("Content-Type:application/json")
-    @POST("login")
+    @POST("user/Signin")
     fun loginUser(@Body info: UserRequest): Call<ResponseBody>
 
     @Headers("Content-Type:application/json")
