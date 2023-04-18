@@ -34,7 +34,7 @@ interface RestApiService {
 
     @POST("users/resetpassword")
     fun verifcode(@Body code: CodeRequest): Call<Unit>
-    @POST("users/resetpassword")
+    @POST("users/changepwd")
     fun changePass(@Body code: ChangeRequest): Call<Unit>
 
     @POST("users/resetpwd")
