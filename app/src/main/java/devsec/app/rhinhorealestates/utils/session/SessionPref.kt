@@ -21,6 +21,8 @@ class SessionPref {
         const val PREF_NAME = "login_pref"
         const val IS_LOGGED_IN = "is_logged_in"
         const val USER_ID = "user_id"
+        const val USER_firstname = "firstname"
+        const val USER_lastname= "lastname"
         const val USER_NAME = "user_name"
         const val USER_EMAIL = "user_email"
         const val USER_PASSWORD = "user_password"
@@ -38,14 +40,17 @@ class SessionPref {
 
     fun createRegisterSession(
         id: String,
-        username: String,
+        firstname: String,
+        lastname: String,
         email: String,
-        password: String
+        password: String,
+
     )
     {
         editor.putBoolean(IS_LOGGED_IN, true)
         editor.putString(USER_ID, id)
-        editor.putString(USER_NAME, username)
+        editor.putString(USER_firstname, firstname)
+        editor.putString(USER_lastname, lastname)
         editor.putString(USER_EMAIL, email)
 
         editor.putString(USER_PASSWORD, password)
