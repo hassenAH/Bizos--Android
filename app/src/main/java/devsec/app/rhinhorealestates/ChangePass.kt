@@ -9,11 +9,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import devsec.app.RhinhoRealEstates.databinding.ActivityChangePassBinding
-import devsec.app.RhinhoRealEstates.databinding.ActivityCodeBinding
 import devsec.app.rhinhorealestates.api.RestApiService
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.data.api.ChangeRequest
-import devsec.app.rhinhorealestates.data.api.CodeRequest
+
 import devsec.app.rhinhorealestates.ui.main.view.LoginActivity
 import devsec.app.rhinhorealestates.utils.services.LoadingDialog
 import devsec.app.rhinhorealestates.utils.session.SessionPref
@@ -22,7 +21,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ChangePass : AppCompatActivity() {
-    lateinit var sendcodebtn : Button
+    lateinit var changebtn : Button
     lateinit var ePass: EditText
     lateinit var eConfirm: EditText
     lateinit var sessionPref: SessionPref
@@ -40,9 +39,9 @@ class ChangePass : AppCompatActivity() {
         ePass = findViewById(R.id.passwordchangeInputEditText)
         eConfirm = findViewById(R.id.passwordchangeInputEditText2)
 
-        sendcodebtn = findViewById(R.id.CodeBtn)
+        changebtn = findViewById(R.id.btn_Confirm)
 
-        sendcodebtn.setOnClickListener {
+        changebtn.setOnClickListener {
             if (validateCode()) {
                 if (email != null) {
                     validate(email)

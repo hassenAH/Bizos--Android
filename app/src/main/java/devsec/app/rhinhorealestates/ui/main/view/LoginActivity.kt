@@ -133,10 +133,11 @@ class LoginActivity : AppCompatActivity() {
                         val jsonObject = gson.fromJson(jsonSTRING, JsonObject::class.java)
                         val user = jsonObject.get("user").asJsonObject
                         val id_user = user.get("_id").asString
-                        val username_user = user.get("username").asString
+                        val first_name = user.get("first_name").asString
+                        val last_name = user.get("last_name").asString
                         val email_user = user.get("email").asString
 
-                        sessionPref.createRegisterSession(id_user, username_user, email_user, "")
+                        sessionPref.createRegisterSession(id_user, email_user, "")
                         Toast.makeText(this@LoginActivity, "Welcome!", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this@LoginActivity, MainMenuActivity::class.java)
                         startActivity(intent)
