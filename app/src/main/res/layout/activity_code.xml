@@ -9,15 +9,32 @@
 
     <ImageView
         android:id="@+id/LogoIV"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/asset_3" />
+        app:srcCompat="@drawable/inbox" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enter Your OTP Here "
+        android:textColor="@color/rosybrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIV"
+        />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/CodeInputLayout"
@@ -25,7 +42,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
         android:hint="@string/CodeTxt"
         app:boxCornerRadiusBottomEnd="20dp"
@@ -37,71 +54,14 @@
         app:helperTextTextColor="@color/rosybrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoIV">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/CodeEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/PasswordchangeInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="40dp"
-        android:hint="@string/PasswordTxt"
-        android:inputType="textPassword"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
-        app:counterEnabled="true"
-        app:helperTextTextColor="@color/rosybrown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CodeInputLayout"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordchangeInputEditText"
-            android:layout_width="match_parent"
-            android:inputType="textPassword"
-            android:layout_height="wrap_content"
-            android:textColorHint="#757575" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/PasswordchangeInputLayout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="40dp"
-        android:hint="@string/RepeatPasswordTxt"
-        android:inputType="textPassword"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
-        app:counterEnabled="true"
-
-        app:helperTextTextColor="@color/rosybrown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/PasswordchangeInputLayout"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordchangeInputEditText2"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
@@ -116,7 +76,7 @@
         android:text="@string/VerifCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordchangeInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/CodeInputLayout" />
 
 
 

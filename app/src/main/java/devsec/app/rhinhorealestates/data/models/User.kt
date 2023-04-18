@@ -9,7 +9,7 @@ data  class User (
 
     constructor(id: String) : this(id,"","","")
     constructor(username: String, password: String, email: String) : this("", username, email, password)
-   // constructor(id: String) : this(id,"","","","","")
+
 
 }
 //    val  photo :  String
