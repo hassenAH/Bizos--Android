@@ -14,6 +14,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
 import devsec.app.rhinhorealestates.data.api.UserRequest
+import okhttp3.RequestBody
+
 interface RestApiService {
 
 
@@ -55,10 +57,15 @@ interface RestApiService {
 
 
     @Multipart
-    @POST("uploadfile")
-    fun postImage(
+    @Headers("Content-Type:application/json")
+    @POST("user/updateUser/{id}")
+    fun updatewithimage(
+        @Path("id") id: String,
+        @Part("first_name") firstname: RequestBody,
+        @Part("last_name") last_name: RequestBody,
+        @Part("email") email: RequestBody,
         @Part image: MultipartBody.Part,
-    ): Call<ResponseBody>
+        ): Call<ResponseBody>
 
 
 
@@ -77,7 +84,7 @@ interface RestApiService {
 class RetrofitInstance {
     companion object {
 
-        const val BASE_URL: String = "http://192.168.1.7:5000/"
+        const val BASE_URL: String = "http://192.168.1.168:5000/"
      // const val BASE_URL: String = "http://192.168.0.11:9090/api/"
 
 

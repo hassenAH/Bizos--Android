@@ -18,18 +18,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/editProfileImage"
+
+        app:srcCompat="@drawable/logo"
+        android:elevation="15dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:src="@drawable/asset_3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="100dp"/>
 
     <EditText
         android:id="@+id/editProfilefirstname"
@@ -58,14 +63,13 @@
         android:background="@drawable/custom_input"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="@string/LastNameTxt"
+        android:hint="@string/EmailTxt"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"

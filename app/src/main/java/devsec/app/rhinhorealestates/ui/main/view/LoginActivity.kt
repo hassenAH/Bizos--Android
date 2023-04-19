@@ -136,8 +136,8 @@ class LoginActivity : AppCompatActivity() {
                         val first_name = user.get("first_name").asString
                         val last_name = user.get("last_name").asString
                         val email_user = user.get("email").asString
-
-                        sessionPref.createRegisterSession(id_user, first_name,first_name,email_user, "")
+                        val image_user = user.get("image").asString
+                        sessionPref.createRegisterSession(id_user, first_name,last_name,email_user, image_user)
                         Toast.makeText(this@LoginActivity, "Welcome!", Toast.LENGTH_SHORT).show()
 
                         val intent = Intent(this@LoginActivity, MainMenuActivity::class.java)
