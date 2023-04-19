@@ -28,19 +28,19 @@ class EditProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit_profile)
         sessionPref = SessionPref(this)
 
-        val username = findViewById<TextView>(R.id.editProfileUsername)
+        val username = findViewById<TextView>(R.id.editProfilelastname)
         val email = findViewById<TextView>(R.id.editProfileEmail)
 
-        val password = findViewById<TextView>(R.id.editProfilePassword)
+        val password = findViewById<TextView>(R.id.editProfilefirstname)
 
         val updateButton = findViewById<Button>(R.id.updateProfileButton)
 
         user = sessionPref.getUserPref()
         id = user.get(SessionPref.USER_ID).toString()
-        username.text = user.get(SessionPref.USER_NAME)
+        username.text = user.get(SessionPref.USER_firstname)
         email.text = user.get(SessionPref.USER_EMAIL)
-        password.text = user.get(SessionPref.USER_PASSWORD)
-        password.visibility = TextView.INVISIBLE
+        password.text = user.get(SessionPref.USER_lastname)
+
 
 
         val toolbar = findViewById<Toolbar>(R.id.editProfileToolbar)
@@ -50,15 +50,11 @@ class EditProfileActivity : AppCompatActivity() {
 
         updateButton.setOnClickListener {
             val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
-            val userPref = User(
-                username = username.text.toString(),
-                email = email.text.toString(),
-                password = password.text.toString()
-
-            )
+            val userPref =
+                User(id,username.text.toString(),password.text.toString(),email.text.toString(),"")
             val call = retIn.updateUser(
                 user.get(SessionPref.USER_ID).toString(),
-                userPref
+               userPref
             )
             call.enqueue(object : Callback<User> {
                 override fun onResponse(call: Call<User>, response: Response<User>) {

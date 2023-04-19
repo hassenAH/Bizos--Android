@@ -8,6 +8,7 @@
     <string name="PasswordTxt">Password</string>
     <string name="firstnameTxt">First Name</string>
     <string name="LastNameTxt">Last Name</string>
+    <string name="UsernameTxt">Email</string>
     <string name="email">email</string>
     <string name="EmailTxt" translatable="false">Email</string>
     <string name="PhoneTxt">Phone</string>

@@ -62,7 +62,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
         val id : String = ""
-        val registerInfo = User(id, username, email, password)
+        val registerInfo = User(id, username, email, password,"")
 
         retIn.registerUser(registerInfo).enqueue(object :
             Callback<ResponseBody> {
