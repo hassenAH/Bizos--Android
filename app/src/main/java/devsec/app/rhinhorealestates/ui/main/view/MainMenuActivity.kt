@@ -86,24 +86,8 @@ class MainMenuActivity : AppCompatActivity() {
                     startActivity(intent)
                     drawerLayout.closeDrawer(navigationView)
                 }
-                R.id.nav_feedback -> {
-                    Toast.makeText(this, "Comming soon!", Toast.LENGTH_SHORT).show()
-//                    val url = ""
-//                    val i = Intent(Intent.ACTION_VIEW)
-//                    i.data = Uri.parse(url)
-//                    startActivity(i)
-                }
-                R.id.nav_website -> {
-                    val url = "https://github.com/ilyesblg/"
-                    val i = Intent(Intent.ACTION_VIEW)
-                    i.data = Uri.parse(url)
-                    startActivity(i)
-                }
-                R.id.nav_edit_profile -> {
-                    val intent = Intent(this, EditProfileActivity::class.java)
-                    startActivity(intent)
-                    drawerLayout.closeDrawer(navigationView)
-                }
+
+
                 R.id.nav_logout -> {
                     session = SessionPref(this)
                     session.logoutUser()

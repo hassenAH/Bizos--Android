@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editProfileUsername"
+        android:id="@+id/editProfilefirstname"
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="12dp"
         android:background="@drawable/custom_input"
@@ -45,12 +45,32 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="@string/UsernameTxt"
+        android:hint="@string/firstnameTxt"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editProfileImage" />
+    <EditText
+        android:id="@+id/editProfilelastname"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/LastNameTxt"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfilefirstname" />
 
     <EditText
         android:id="@+id/editProfileEmail"
@@ -70,68 +90,12 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editProfilelastname" />
 
-    <EditText
-        android:id="@+id/editProfileAdress"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:drawablePadding="12dp"
-        android:background="@drawable/custom_input"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:hint="@string/UsernameTxt"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileEmail" />
 
-    <EditText
-        android:id="@+id/editProfilePhone"
-        android:drawableStart="@drawable/ic_baseline_local_phone_24"
-        android:drawablePadding="12dp"
-        android:background="@drawable/custom_input"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:hint="@string/PhoneTxt"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileAdress" />
 
-    <EditText
-        android:id="@+id/editProfilePassword"
-        android:drawableStart="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="12dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:background="@drawable/custom_input"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:hint="@string/PasswordTxt"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfilePhone" />
+
 
     <Button
         android:id="@+id/updateProfileButton"

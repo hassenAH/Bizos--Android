@@ -6,7 +6,9 @@
     <string name="hint" translatable="false">hint</string>
     <string name="loginTxt" translatable="false">Login</string>
     <string name="PasswordTxt">Password</string>
-    <string name="UsernameTxt">Username</string>
+    <string name="firstnameTxt">First Name</string>
+    <string name="LastNameTxt">Last Name</string>
+    <string name="email">email</string>
     <string name="EmailTxt" translatable="false">Email</string>
     <string name="PhoneTxt">Phone</string>
     <string name="create_accountBtn">Create Account</string>

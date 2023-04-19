@@ -30,9 +30,9 @@ class EditProfileActivity : AppCompatActivity() {
 
         val username = findViewById<TextView>(R.id.editProfileUsername)
         val email = findViewById<TextView>(R.id.editProfileEmail)
-        val phone = findViewById<TextView>(R.id.editProfilePhone)
+
         val password = findViewById<TextView>(R.id.editProfilePassword)
-        val adress = findViewById<TextView>(R.id.editProfileAdress)
+
         val updateButton = findViewById<Button>(R.id.updateProfileButton)
 
         user = sessionPref.getUserPref()
