@@ -14,7 +14,10 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
+    <style name="Corners">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
     <style name="Theme.RhinhoRealStatesAB" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/rosybrown</item>
@@ -32,7 +35,7 @@
 
     <style name="Theme.RhinhoRealStates.NoActionBar">
         <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="Theme.RhinhoRealStates.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

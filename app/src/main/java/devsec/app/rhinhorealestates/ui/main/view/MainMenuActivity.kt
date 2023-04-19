@@ -17,6 +17,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import devsec.app.RhinhoRealEstates.ChangePassword
 import devsec.app.RhinhoRealEstates.R
 import devsec.app.RhinhoRealEstates.databinding.ActivityMainMenuBinding
 import devsec.app.rhinhorealestates.ui.main.fragments.HomeFragment
@@ -86,7 +87,11 @@ class MainMenuActivity : AppCompatActivity() {
                     startActivity(intent)
                     drawerLayout.closeDrawer(navigationView)
                 }
-
+                R.id.nav_changepass -> {
+                    val intent = Intent(this, ChangePassword::class.java)
+                    startActivity(intent)
+                    drawerLayout.closeDrawer(navigationView)
+                }
 
                 R.id.nav_logout -> {
                     session = SessionPref(this)

@@ -21,7 +21,7 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/editProfileImage"
-
+        app:shapeAppearanceOverlay="@style/Corners"
         app:srcCompat="@drawable/logo"
         android:elevation="15dp"
         android:padding="5dp"

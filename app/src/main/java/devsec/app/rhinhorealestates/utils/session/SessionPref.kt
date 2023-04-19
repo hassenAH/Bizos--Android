@@ -43,7 +43,7 @@ class SessionPref {
         firstname: String,
         lastname: String,
         email: String,
-        password: String,
+        image: String,
 
     )
     {
@@ -53,7 +53,7 @@ class SessionPref {
         editor.putString(USER_lastname, lastname)
         editor.putString(USER_EMAIL, email)
 
-        editor.putString(USER_PASSWORD, password)
+        editor.putString(USER_IMAGE, image)
 
 
         editor.commit()
@@ -85,10 +85,10 @@ class SessionPref {
         user.put(USER_ID, pref.getString(USER_ID, null)!!)
         user.put(USER_NAME, pref.getString(USER_NAME, "username")!!)
         user.put(USER_EMAIL, pref.getString(USER_EMAIL, "email")!!)
-        user.put(USER_PASSWORD, pref.getString(USER_PASSWORD, "password")!!)
-        user.put(USER_ADDRESS, pref.getString(USER_ADDRESS,"adress")!!)
+        user.put(USER_firstname, pref.getString(USER_firstname, "firstname")!!)
+        user.put(USER_lastname, pref.getString(USER_lastname,"lastname")!!)
         user.put(USER_PHONE, pref.getString(USER_PHONE, "phone")!!)
-//        user.put(USER_IMAGE, pref.getString(USER_IMAGE, null)!!)
+      user.put(USER_IMAGE, pref.getString(USER_IMAGE, null)!!)
         return user
 
     }

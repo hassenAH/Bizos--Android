@@ -44,7 +44,7 @@ class EditProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit_profile)
         sessionPref = SessionPref(this)
         user = sessionPref.getUserPref()
-        image = user.get(SessionPref.USER_PASSWORD).toString()
+        image = user.get(SessionPref.USER_IMAGE).toString()
         val firstname = findViewById<TextView>(R.id.editProfilefirstname)
         val email = findViewById<TextView>(R.id.editProfileEmail)
 

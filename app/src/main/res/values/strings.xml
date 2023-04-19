@@ -76,6 +76,7 @@
     <string name="visit_our_website">Visit our website</string>
     <string name="community_space">Community space</string>
     <string name="edit_profile">Account settings</string>
+    <string name="change_password">Change password</string>
     <string name="logout">Logout</string>
     <string name="user_preferences">User preferences</string>
     <string name="RepeatPasswordTxt" translatable="false">Repeat Password</string>
