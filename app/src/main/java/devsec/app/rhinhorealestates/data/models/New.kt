@@ -7,6 +7,7 @@ data  class New (
     val  source :  String ,
     val  date :  String,
     val  snippet:   String,
+
     val  thumbnail:   String
 ) {
 

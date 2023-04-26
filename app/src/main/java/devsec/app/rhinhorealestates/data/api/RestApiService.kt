@@ -47,6 +47,8 @@ interface RestApiService {
 
     @GET("/user/getNews")
     fun getNews(): Call<List<New>>
+    @POST("/user/getnew")
+    fun getNewsbySearch(@Body search: String): Call<List<New>>
 
     @Headers("Content-Type:application/json")
     @PATCH("user/{id}")
