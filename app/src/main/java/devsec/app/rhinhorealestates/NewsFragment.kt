@@ -25,7 +25,7 @@ class NewsFragment : Fragment() {
 
     private lateinit var rvnews: RecyclerView
     private lateinit var NewAdapter: NewAdapter
-    lateinit var SearchEditText: TextInputLayout
+    lateinit var SearchEditText: EditText
 
 
     override fun onCreateView(
@@ -39,10 +39,10 @@ class NewsFragment : Fragment() {
         rvnews.layoutManager = LinearLayoutManager(requireContext())
         NewAdapter = NewAdapter(listOf()) // create an empty adapter
         rvnews.adapter = NewAdapter
-        SearchEditText.editText?.setOnEditorActionListener { v, actionId, event ->
+        SearchEditText.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE || actionId == EditorInfo.IME_ACTION_SEARCH) {
                 // User has finished typing, perform action
-                val searchText = SearchEditText.editText?.text.toString()
+                val searchText = SearchEditText.text.toString()
                 // do something with searchText
                 val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
                 retIn.getNewsbySearch(searchText).enqueue(object : Callback<List<New>> {
