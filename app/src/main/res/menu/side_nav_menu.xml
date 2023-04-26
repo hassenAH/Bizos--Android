@@ -20,6 +20,10 @@
                 android:title="@string/change_password"
                 android:icon="@drawable/ic_baseline_settings_24" />
             <item
+                android:id="@+id/nav_News"
+                android:title="nav_News"
+                android:icon="@drawable/ic_baseline_settings_24" />
+            <item
                 android:id="@+id/nav_logout"
                 android:title="@string/logout"
                 android:icon="@drawable/ic_baseline_logout_24"/>

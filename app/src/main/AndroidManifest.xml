@@ -71,14 +71,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name="devsec.app.rhinhorealestates.ui.main.view.GuideActivity"
-            android:exported="false"
-            android:theme="@style/Theme.RhinhoRealStatesAB">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name="devsec.app.rhinhorealestates.ui.main.view.RegisterActivity"
             android:exported="false"
@@ -87,7 +80,7 @@
             android:name="devsec.app.rhinhorealestates.ui.main.view.CodeActivity"
             android:exported="false"
             android:label="@string/title_activity_code"
-            android:theme="@style/Theme.RhinhoRealStates.NoActionBar">
+            android:theme="@style/Theme.RhinhoRealStatesAB">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -96,7 +89,7 @@
             android:name="devsec.app.rhinhorealestates.ui.main.view.ForgetPasswordActivity"
             android:exported="false"
             android:label="@string/title_activity_forget_password"
-            android:theme="@style/Theme.RhinhoRealStates.NoActionBar">
+            android:theme="@style/Theme.RhinhoRealStatesAB">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
