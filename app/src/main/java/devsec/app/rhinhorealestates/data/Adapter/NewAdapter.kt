@@ -43,7 +43,7 @@ class NewAdapter (var news: List<New>): RecyclerView.Adapter<NewAdapter.NewViewH
             title.text = new.title
             date.text = new.date
             snippet.text = new.snippet
-            val url = "http://192.168.1.168:5000/img/"+new.thumbnail
+            val url = new.thumbnail
             Picasso.get().load(url).into(imageView)
             //  tvDescription.text = car.description
             //tvCarburant.text = car.carburant

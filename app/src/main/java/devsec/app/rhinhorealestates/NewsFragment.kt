@@ -45,7 +45,7 @@ class NewsFragment : Fragment() {
         retIn.getNews().enqueue(object : Callback<List<New>> {
             override fun onResponse(call: Call<List<New>>, response: Response<List<New>>) {
                 if (response.isSuccessful) {
-                  val news = response.body()
+                  val news = response.body();
                     if (news != null) {
                         NewAdapter.news = news // update the adapter with the retrieved cars
                         NewAdapter.notifyDataSetChanged() // notify the adapter that the data has changed
