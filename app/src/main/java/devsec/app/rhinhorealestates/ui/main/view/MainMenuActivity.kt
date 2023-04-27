@@ -92,7 +92,7 @@ class MainMenuActivity : AppCompatActivity() {
                     drawerLayout.closeDrawer(navigationView)
                 }
 
-                R.id.nav_News -> replaceFragment(NewsFragment())
+                R.id.nav_MyAppointment -> replaceFragment(NewsFragment())
                 R.id.nav_changepass -> {
                     val intent = Intent(this, ChangePassword::class.java)
                     startActivity(intent)
