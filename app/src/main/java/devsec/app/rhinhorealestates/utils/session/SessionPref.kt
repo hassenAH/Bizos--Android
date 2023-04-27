@@ -17,6 +17,7 @@ class SessionPref {
         editor = pref.edit()
     }
 
+
     companion object {
         const val PREF_NAME = "login_pref"
         const val IS_LOGGED_IN = "is_logged_in"

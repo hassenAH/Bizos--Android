@@ -9,16 +9,19 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import devsec.app.RhinhoRealEstates.ChangePassword
 import devsec.app.RhinhoRealEstates.NewsFragment
+import devsec.app.RhinhoRealEstates.ProfileHomeFragment
 import devsec.app.RhinhoRealEstates.R
 import devsec.app.RhinhoRealEstates.databinding.ActivityMainMenuBinding
 import devsec.app.rhinhorealestates.ui.main.fragments.HomeFragment
@@ -88,6 +91,7 @@ class MainMenuActivity : AppCompatActivity() {
                     startActivity(intent)
                     drawerLayout.closeDrawer(navigationView)
                 }
+
                 R.id.nav_News -> replaceFragment(NewsFragment())
                 R.id.nav_changepass -> {
                     val intent = Intent(this, ChangePassword::class.java)
@@ -125,14 +129,41 @@ class MainMenuActivity : AppCompatActivity() {
         session = SessionPref(this.applicationContext)
 
 
+        val navDrawerButton = findViewById<Button>(R.id.menu)
+        navDrawerButton.setOnClickListener {
+            drawerLayout.open()
+        }
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.home -> {
+                    val profileFragment = NewsFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragments_container, profileFragment)
+                        .addToBackStack(null)
+                        .commit()
+                    drawerLayout.closeDrawer(navigationView)
+                    true
+                }
 
 
-
+                R.id.profile -> {
+                    val profileFragment = ProfileHomeFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragments_container, profileFragment)
+                        .addToBackStack(null)
+                        .commit()
+                    drawerLayout.closeDrawer(navigationView)
+                    true
+                }
+                else -> false
+            }
+        }
 
 
         // bottom navigation bar
 
-            supportFragmentManager.beginTransaction().replace(R.id.fragments_container, HomeFragment())
+            supportFragmentManager.beginTransaction().replace(R.id.fragments_container, NewsFragment())
                 .commit()
         }
 

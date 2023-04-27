@@ -20,8 +20,32 @@
             app:menu="@menu/bottom_nav">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
-
         <FrameLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/menu"
+                android:layout_width="48dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/theWhite"
+                app:icon="@drawable/hamburger"
+                app:iconTint="@color/rosybrown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_below="@+id/constraintLayout"
             android:id="@+id/fragments_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

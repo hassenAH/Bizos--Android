@@ -33,9 +33,7 @@ class NewAdapter (var news: List<New>): RecyclerView.Adapter<NewAdapter.NewViewH
 
 
         val imageView: ImageView = itemView.findViewById(R.id.thumbnail)
-        //private val tvDescription: TextView = itemView.findViewById(R.id.showDescription)
-        //private val tvCarburant: TextView = itemView.findViewById(R.id.showCarburant)
-        //private val tv_id: TextView = itemView.findViewById(R.id.showid)
+
 
 
 
@@ -45,9 +43,7 @@ class NewAdapter (var news: List<New>): RecyclerView.Adapter<NewAdapter.NewViewH
             snippet.text = new.snippet
             val url = new.thumbnail
             Picasso.get().load(url).into(imageView)
-            //  tvDescription.text = car.description
-            //tvCarburant.text = car.carburant
-            //tv_id.text = car._id
+
 
         }
     }

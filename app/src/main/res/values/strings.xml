@@ -18,6 +18,9 @@
     <string name="registerTV">Create account!</string>
     <string name="todo" translatable="false">TODO</string>
     <string name="addTxt">Add</string>
+    <string name="My_Packs">My Packs</string>
+    <string name="My_Cases">My Cases</string>
+    <string name="My_Appointement">My Appointement</string>
     <string name="title_activity_home" translatable="false">HomeActivity</string>
     <string name="AdressTxt" translatable="false">Adress</string>
     <string name="Forget">Forget Password</string>
@@ -87,6 +90,7 @@
 
 
     <string name="hello">"Hello, "</string>
+    <string name="mariya_doe">Mariya Doe</string>
 
 
 </resources>

@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context="devsec.app.rhinhorealestates.ui.main.fragments.HomeFragment">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/background">
+            android:background="@color/background"
+
+            android:id="@+id/men">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
@@ -37,6 +37,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="SpeakableTextPresentCheck" />
 
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -58,6 +59,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </ScrollView>
+
+
+
+
+
+
 
 </FrameLayout>
