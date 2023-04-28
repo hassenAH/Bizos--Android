@@ -37,10 +37,7 @@ class CasesFragment : Fragment() {
     ): View? {
             val view = inflater.inflate(R.layout.fragment_cases, container, false)
             rvCases = view.findViewById(R.id.CaseAdapter_recycler_view)
-            add_car_button = view.findViewById(R.id.add_car_button)
-            add_car_button.setOnClickListener {
-              
-            }
+
             rvCases.layoutManager = LinearLayoutManager(requireContext())
             caseAdapter = CaseAdapter(listOf()) // create an empty adapter
             rvCases.adapter = caseAdapter
@@ -49,6 +46,13 @@ class CasesFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        add_car_button = view.findViewById(R.id.add_car_button)
+        add_car_button.setOnClickListener {
+            val fragment = AddCaseFragment()
+            val fragmentTransaction = fragmentManager?.beginTransaction()
+            fragmentTransaction?.replace(R.id.fragments_container, fragment)
+            fragmentTransaction?.commit()
+        }
         sessionPref = SessionPref(requireContext())
         user = sessionPref.getUserPref()
         id = user.get(SessionPref.USER_ID).toString()
