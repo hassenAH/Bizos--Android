@@ -19,10 +19,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
-import devsec.app.RhinhoRealEstates.ChangePassword
-import devsec.app.RhinhoRealEstates.NewsFragment
-import devsec.app.RhinhoRealEstates.ProfileHomeFragment
-import devsec.app.RhinhoRealEstates.R
+import devsec.app.RhinhoRealEstates.*
 import devsec.app.RhinhoRealEstates.databinding.ActivityMainMenuBinding
 import devsec.app.rhinhorealestates.ui.main.fragments.HomeFragment
 import devsec.app.rhinhorealestates.api.RestApiService
@@ -92,7 +89,7 @@ class MainMenuActivity : AppCompatActivity() {
                     drawerLayout.closeDrawer(navigationView)
                 }
 
-                R.id.nav_MyAppointment -> replaceFragment(NewsFragment())
+                R.id.nav_MyCases -> replaceFragment(CasesFragment())
                 R.id.nav_changepass -> {
                     val intent = Intent(this, ChangePassword::class.java)
                     startActivity(intent)

@@ -80,7 +80,8 @@ interface RestApiService {
     fun uploadImage(
         @Part myFile: MultipartBody.Part
     ): Call<ResponseBody>
-
+    @GET("/Case/getCaseByAvocat/{id}")
+    fun getCasesbyAvocat(@Path("id") id: String): Call<List<Case>>
 
 
 
