@@ -191,6 +191,7 @@ class MainMenuActivity : AppCompatActivity() {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragments_container, fragment)
         fragmentTransaction.commit()
+        drawerLayout.closeDrawer(navigationView)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

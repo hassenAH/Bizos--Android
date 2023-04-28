@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,6 +29,7 @@ class CasesFragment : Fragment() {
     lateinit var sessionPref: SessionPref
     private lateinit var rvCases: RecyclerView
     private lateinit var caseAdapter: CaseAdapter
+    lateinit var add_car_button : Button
     lateinit var user : HashMap<String, String>
         override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +37,10 @@ class CasesFragment : Fragment() {
     ): View? {
             val view = inflater.inflate(R.layout.fragment_cases, container, false)
             rvCases = view.findViewById(R.id.CaseAdapter_recycler_view)
+            add_car_button = view.findViewById(R.id.add_car_button)
+            add_car_button.setOnClickListener {
+              
+            }
             rvCases.layoutManager = LinearLayoutManager(requireContext())
             caseAdapter = CaseAdapter(listOf()) // create an empty adapter
             rvCases.adapter = caseAdapter
