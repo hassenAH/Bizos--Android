@@ -1,5 +1,6 @@
 package devsec.app.RhinhoRealEstates
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -74,6 +75,7 @@ class NewsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
         retIn.getNews().enqueue(object : Callback<List<New>> {
+            @SuppressLint("SuspiciousIndentation")
             override fun onResponse(call: Call<List<New>>, response: Response<List<New>>) {
                 if (response.isSuccessful) {
                   val news = response.body();

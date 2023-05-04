@@ -134,12 +134,23 @@ class MainMenuActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.home -> {
-                    val profileFragment = NewsFragment()
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragments_container, profileFragment)
-                        .addToBackStack(null)
-                        .commit()
-                    drawerLayout.closeDrawer(navigationView)
+                    if (session.getUserPref().get(SessionPref.USER_ROLE).toString()=="Avocat"){
+
+                        val profileFragment = NewsFragment()
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fragments_container, profileFragment)
+                            .addToBackStack(null)
+                            .commit()
+                        drawerLayout.closeDrawer(navigationView)
+                    }else{
+                        val userHome = user_home()
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fragments_container, userHome)
+                            .addToBackStack(null)
+                            .commit()
+                        drawerLayout.closeDrawer(navigationView)
+                    }
+
                     true
                 }
 
@@ -159,9 +170,16 @@ class MainMenuActivity : AppCompatActivity() {
 
 
         // bottom navigation bar
+if (
+    (session.getUserPref().get(SessionPref.USER_ROLE).toString()=="Avocat")
+){
+    supportFragmentManager.beginTransaction().replace(R.id.fragments_container, NewsFragment())
+        .commit()
+}else{
+    supportFragmentManager.beginTransaction().replace(R.id.fragments_container, user_home())
+        .commit()
+}
 
-            supportFragmentManager.beginTransaction().replace(R.id.fragments_container, NewsFragment())
-                .commit()
         }
 
 

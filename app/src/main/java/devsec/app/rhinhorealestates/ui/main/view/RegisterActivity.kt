@@ -97,7 +97,8 @@ class RegisterActivity : AppCompatActivity() {
                         val email_user = user.get("email").asString
                         val first_name = user.get("first_name").asString
                         val last_name = user.get("last_name").asString
-                        sessionPref.createRegisterSession(id_user, first_name,first_name,email_user, "")
+                        val role = user.get("role").asString
+                        sessionPref.createRegisterSession(id_user, role , first_name,first_name,email_user, "")
 
                         val intent = Intent(this@RegisterActivity, MainMenuActivity::class.java)
                         startActivity(intent)

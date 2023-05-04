@@ -52,7 +52,7 @@ class EditProfileActivity : AppCompatActivity() {
 
         val updateButton = findViewById<Button>(R.id.updateProfileButton)
         val imageView: ShapeableImageView = findViewById(R.id.editProfileImage)
-        val url = "http://192.168.1.168:5000/img/"+image
+        val url = "http://172.16.8.136:5000/img/"+image
         Glide.with(this)
             .load(url)
             .placeholder(R.drawable.logo)

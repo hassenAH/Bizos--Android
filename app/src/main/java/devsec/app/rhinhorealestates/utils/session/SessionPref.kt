@@ -28,6 +28,8 @@ class SessionPref {
         const val USER_EMAIL = "user_email"
         const val USER_PASSWORD = "user_password"
         const val USER_PHONE = "user_phone"
+        const val USER_ROLE = "user_role"
+
         const val USER_ADDRESS = "user_address"
         const val USER_IMAGE = "user_image"
     }
@@ -41,10 +43,12 @@ class SessionPref {
 
     fun createRegisterSession(
         id: String,
+        role : String,
         firstname: String,
         lastname: String,
         email: String,
         image: String,
+
 
     )
     {
@@ -53,9 +57,8 @@ class SessionPref {
         editor.putString(USER_firstname, firstname)
         editor.putString(USER_lastname, lastname)
         editor.putString(USER_EMAIL, email)
-
+        editor.putString(USER_ROLE, role)
         editor.putString(USER_IMAGE, image)
-
 
         editor.commit()
     }
@@ -86,6 +89,7 @@ class SessionPref {
         user.put(USER_ID, pref.getString(USER_ID, null)!!)
         user.put(USER_NAME, pref.getString(USER_NAME, "username")!!)
         user.put(USER_EMAIL, pref.getString(USER_EMAIL, "email")!!)
+        user.put(USER_ROLE, pref.getString(USER_ROLE, "role")!!)
         user.put(USER_firstname, pref.getString(USER_firstname, "firstname")!!)
         user.put(USER_lastname, pref.getString(USER_lastname,"lastname")!!)
         user.put(USER_PHONE, pref.getString(USER_PHONE, "phone")!!)
