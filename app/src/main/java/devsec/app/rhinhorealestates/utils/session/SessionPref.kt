@@ -93,16 +93,15 @@ class SessionPref {
         user.put(USER_firstname, pref.getString(USER_firstname, "firstname")!!)
         user.put(USER_lastname, pref.getString(USER_lastname,"lastname")!!)
         user.put(USER_PHONE, pref.getString(USER_PHONE, "phone")!!)
-      user.put(USER_IMAGE, pref.getString(USER_IMAGE, null)!!)
+        user.put(USER_IMAGE, pref.getString(USER_IMAGE, null)!!)
         return user
 
     }
 
-    fun setUserPref(username: String, email: String, password: String)
+    fun setUserPrefImage(username: String)
     {
-        editor.putString(USER_NAME, username)
-        editor.putString(USER_EMAIL, email)
-        editor.putString(USER_PASSWORD, password)
+        editor.putString(USER_IMAGE, username)
+
 
         editor.commit()
     }

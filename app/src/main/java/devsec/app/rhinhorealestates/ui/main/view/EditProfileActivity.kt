@@ -18,6 +18,7 @@ import devsec.app.RhinhoRealEstates.R
 import devsec.app.rhinhorealestates.api.RestApiService
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.data.models.User
+import devsec.app.rhinhorealestates.utils.services.RealPathUtil
 import devsec.app.rhinhorealestates.utils.session.SessionPref
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -119,11 +120,23 @@ class EditProfileActivity : AppCompatActivity() {
 
         if (requestCode == REQUEST_IMAGE_PICK && resultCode == Activity.RESULT_OK && data != null) {
             val imageUri = data.data
+
+            // Get the file path of the selected image using the RealPathUtil class
+            val filePath = imageUri?.let { RealPathUtil.getRealPathFromURI_API19(this, it) }
+
+            // Create a RequestBody object from the selected image file
+            val imageFile = File(filePath)
+            val requestBody = RequestBody.create(MediaType.parse("image/*"), imageFile)
+
+            // Create a MultipartBody.Part object from the RequestBody object
+            val imagePart = MultipartBody.Part.createFormData("image", imageFile.name, requestBody)
+
             val imageView: ShapeableImageView = findViewById(R.id.editProfileImage)
             imageView.setImageURI(imageUri)
-            file = File(getRealPathFromURI(imageUri))
+
             // Load the image into an ImageView or do something else with it
         }
     }
+
 
 }

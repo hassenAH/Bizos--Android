@@ -60,6 +60,14 @@ interface RestApiService {
 
 
 
+    @Multipart
+    @PUT("user/updatepic/{id}")
+    suspend fun updatePic(
+        @Path("id") id: String,
+        @Part image:RequestBody
+    ): Call<ResponseBody>
+
+
 
     @Multipart
     @Headers("Content-Type:application/json")
@@ -70,6 +78,7 @@ interface RestApiService {
         @Part("last_name") last_name: RequestBody,
         @Part("email") email: RequestBody,
         @Part image: MultipartBody.Part,
+
         ): Call<ResponseBody>
 
 
@@ -80,9 +89,10 @@ interface RestApiService {
     fun uploadImage(
         @Part myFile: MultipartBody.Part
     ): Call<ResponseBody>
-    @GET("/Case/getCaseByAvocat/{id}")
+    @GET("Case/getCaseByAvocat/{id}")
     fun getCasesbyAvocat(@Path("id") id: String): Call<List<Case>>
-
+    @GET("user/getpack/{id}")
+    fun getPackbyAvocat(@Path("id") id: String): Call<List<Pack>>
 
 
 }
@@ -90,7 +100,7 @@ interface RestApiService {
 class RetrofitInstance {
     companion object {
 
-        const val BASE_URL: String = "http://192.168.1.119:5000/"
+        const val BASE_URL: String = "http://192.168.1.168:5000/"
      // const val BASE_URL: String = "http://192.168.0.11:9090/api/"
 
 

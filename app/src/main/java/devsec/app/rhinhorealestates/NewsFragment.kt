@@ -40,6 +40,13 @@ class NewsFragment : Fragment() {
         rvnews.layoutManager = LinearLayoutManager(requireContext())
         NewAdapter = NewAdapter(listOf()) // create an empty adapter
         rvnews.adapter = NewAdapter
+
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         SearchEditText.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE || actionId == EditorInfo.IME_ACTION_SEARCH) {
                 // User has finished typing, perform action
@@ -67,12 +74,6 @@ class NewsFragment : Fragment() {
             }
             return@setOnEditorActionListener false
         }
-
-        return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
         retIn.getNews().enqueue(object : Callback<List<New>> {
             @SuppressLint("SuspiciousIndentation")
