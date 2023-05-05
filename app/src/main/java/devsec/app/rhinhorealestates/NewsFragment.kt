@@ -37,7 +37,11 @@ class NewsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_news, container, false)
         SearchEditText = view.findViewById(R.id.Searchinput)
         rvnews = view.findViewById(R.id.Newsitem_recycler_view)
-        rvnews.layoutManager = LinearLayoutManager(requireContext())
+
+       // rvnews.layoutManager = LinearLayoutManager(requireContext())
+        val layoutManager = LinearLayoutManager(requireContext())
+        layoutManager.orientation = LinearLayoutManager.VERTICAL
+        rvnews.layoutManager = layoutManager
         NewAdapter = NewAdapter(listOf()) // create an empty adapter
         rvnews.adapter = NewAdapter
 
