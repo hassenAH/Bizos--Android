@@ -88,6 +88,7 @@ class MainMenuActivity : AppCompatActivity() {
                     startActivity(intent)
                     drawerLayout.closeDrawer(navigationView)
                 }
+                R.id.nav_MyAppointment -> replaceFragment(Appointement())
                 R.id.nav_myPacks -> replaceFragment(packs())
                 R.id.nav_MyCases -> replaceFragment(CasesFragment())
                 R.id.nav_changepass -> {

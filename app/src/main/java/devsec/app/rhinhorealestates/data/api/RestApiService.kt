@@ -105,16 +105,21 @@ interface RestApiService {
     fun addPack(
         @Body info: Pack
     ): Call<ResponseBody>
+
     @GET("user/getpack/{id}")
     fun getPackbyAvocat(@Path("id") id: String): Call<List<Pack>>
 
+//Appointement//
+    @Headers("Content-Type:application/json")
+    @POST("RendezVous/getbyAvocat/{idAvocat}")
+    fun getdatesbyAvocat(@Path("idAvocat") id: String): Call<List<Appointement>>
 
 }
 
 class RetrofitInstance {
     companion object {
 
-        const val BASE_URL: String = "http://192.168.1.119:5000/"
+        const val BASE_URL: String = "http://192.168.1.168:5000/"
      // const val BASE_URL: String = "http://192.168.0.11:9090/api/"
 
 
