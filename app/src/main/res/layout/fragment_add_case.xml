@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="200dp"
         android:color="@color/rosybrown"
         android:text="Add Case"
@@ -185,12 +185,6 @@
             android:maxLength="10" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-
-
 
 
     <Button

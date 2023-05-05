@@ -8,7 +8,7 @@ data  class User (
     val  password :  String
 ) {
 
-    constructor(id: String) : this(id,"","","","")
+
 
 
 }

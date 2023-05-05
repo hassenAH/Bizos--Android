@@ -89,8 +89,22 @@ interface RestApiService {
     fun uploadImage(
         @Part myFile: MultipartBody.Part
     ): Call<ResponseBody>
+    ///Case/////
     @GET("Case/getCaseByAvocat/{id}")
     fun getCasesbyAvocat(@Path("id") id: String): Call<List<Case>>
+
+    @Headers("Content-Type:application/json")
+    @POST("Case/add")
+    fun addCase(
+        @Body info: Case
+    ): Call<ResponseBody>
+    ///Packs////
+
+    @Headers("Content-Type:application/json")
+    @POST("Pack/add")
+    fun addPack(
+        @Body info: Pack
+    ): Call<ResponseBody>
     @GET("user/getpack/{id}")
     fun getPackbyAvocat(@Path("id") id: String): Call<List<Pack>>
 

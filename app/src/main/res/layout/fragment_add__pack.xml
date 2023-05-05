@@ -59,7 +59,7 @@ tools:context=".Add_Pack">
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/LastnameEditText"
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="30" />
