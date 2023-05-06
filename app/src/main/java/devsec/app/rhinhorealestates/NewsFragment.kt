@@ -26,6 +26,7 @@ class NewsFragment : Fragment() {
 
     private lateinit var rvnews: RecyclerView
     private lateinit var NewAdapter: NewAdapter
+
     lateinit var SearchEditText: EditText
 
 

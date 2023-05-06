@@ -54,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
         val forgetBtn = findViewById<TextView>(R.id.Forget)
 
         registerBtn.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+         val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
@@ -137,8 +137,15 @@ class LoginActivity : AppCompatActivity() {
                         val first_name = user.get("first_name").asString
                         val last_name = user.get("last_name").asString
                         val email_user = user.get("email").asString
+                        val specialite_user = user.get("specialite").asString
                         val image_user = user.get("image").asString
-                        sessionPref.createRegisterSession(id_user, role,first_name,last_name,email_user, image_user)
+                        sessionPref.createRegisterSession(
+                            id_user,
+                            role,
+                            first_name,
+                            last_name,
+                            email_user
+                        )
                         Toast.makeText(this@LoginActivity, "Welcome!", Toast.LENGTH_SHORT).show()
 
                         val intent = Intent(this@LoginActivity, MainMenuActivity::class.java)

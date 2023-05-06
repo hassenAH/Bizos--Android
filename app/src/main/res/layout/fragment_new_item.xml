@@ -54,10 +54,13 @@
                 android:id="@+id/snippet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_below="@id/thumbnail"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                android:textColor="@color/black"
-                android:layout_below="@id/thumbnail"/>
+                android:textColor="@color/black" />
 
         </RelativeLayout>
 

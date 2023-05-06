@@ -47,6 +47,15 @@ interface RestApiService {
 
     @GET("/user/getNews")
     fun getNews(): Call<List<New>>
+
+
+    @GET("/categorie/")
+    fun getCategories(): Call<List<Categories>>
+
+
+    @GET("/user/allAvocat")
+    fun getAvocat(): Call<List<UserTest>>
+
     @POST("/user/getnew")
     fun getNewsbySearch(@Body search: String): Call<List<New>>
 
@@ -114,7 +123,8 @@ interface RestApiService {
 class RetrofitInstance {
     companion object {
 
-        const val BASE_URL: String = "http://192.168.1.119:5000/"
+        const val BASE_URL: String = "http://10.0.2.2:5000/"
+        const val BASE_IMG: String = "http://10.0.2.2:5000/img/"
      // const val BASE_URL: String = "http://192.168.0.11:9090/api/"
 
 

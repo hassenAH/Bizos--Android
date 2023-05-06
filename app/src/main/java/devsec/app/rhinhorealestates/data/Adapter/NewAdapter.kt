@@ -30,8 +30,6 @@ class NewAdapter (var news: List<New>): RecyclerView.Adapter<NewAdapter.NewViewH
         private val title: TextView = itemView.findViewById(R.id.title)
         private val date: TextView = itemView.findViewById(R.id.date)
         private val snippet: TextView = itemView.findViewById(R.id.snippet)
-
-
         val imageView: ImageView = itemView.findViewById(R.id.thumbnail)
 
 

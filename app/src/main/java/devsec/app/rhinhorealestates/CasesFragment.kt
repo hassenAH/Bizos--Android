@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import devsec.app.rhinhorealestates.api.RestApiService
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.data.Adapter.CaseAdapter
-import devsec.app.rhinhorealestates.data.Adapter.NewAdapter
+
 import devsec.app.rhinhorealestates.data.models.Case
 import devsec.app.rhinhorealestates.data.models.New
 import devsec.app.rhinhorealestates.utils.session.SessionPref
