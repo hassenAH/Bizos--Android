@@ -45,51 +45,37 @@
             android:hint="@string/search"
             android:maxLength="30" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/card"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="16dp">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:src="@drawable/card"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/iv_avocat"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avocat" />
 
-            <LinearLayout
-                android:layout_width="456dp"
-                android:layout_height="160dp"
-                android:orientation="horizontal"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="-121dp"
-                tools:layout_editor_absoluteY="0dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/iv_avocat"
+                android:text="Looking for\nyour specialist?"
+                android:textSize="20sp" />
 
-                <TextView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginTop="60dp"
-                    android:text="Locking for \nyour Specialite ?"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="139dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="1dp"
-                    android:src="@drawable/avocat"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
