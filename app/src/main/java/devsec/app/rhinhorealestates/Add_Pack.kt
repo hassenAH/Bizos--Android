@@ -68,7 +68,7 @@ class Add_Pack : Fragment() {
 
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
 
-        val registerInfo = Pack(title,description,name,price)
+        val registerInfo = Pack(title,idAvocat,description,name,price)
 
         retIn.addPack(registerInfo).enqueue(object :
             Callback<ResponseBody> {

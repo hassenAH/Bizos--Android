@@ -44,7 +44,7 @@ class PackAdapter(var Packs: List<Pack>): RecyclerView.Adapter<PackAdapter.PackV
                 description.text = pack.description
                 name.text = pack.name
 
-            prix.text = pack.Prix.toString() + "$"
+                prix.text = pack.prix.toString() + "$"
 
 
 
