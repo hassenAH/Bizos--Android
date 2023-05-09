@@ -22,7 +22,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class packs : Fragment() {
-    // TODO: Rename and change types of parameters
     lateinit var id : String
     lateinit var sessionPref: SessionPref
     private lateinit var rvPack: RecyclerView
@@ -35,11 +34,13 @@ class packs : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val fragmentmanager = requireFragmentManager()
+
         val view = inflater.inflate(R.layout.fragment_packs, container, false)
         rvPack = view.findViewById(R.id.PackAdpter_recycler_view)
 
         rvPack.layoutManager = LinearLayoutManager(requireContext())
-        PackAdapter = PackAdapter(listOf()) // create an empty adapter
+        PackAdapter = PackAdapter(listOf(), fragmentmanager) // create an empty adapter
         rvPack.adapter = PackAdapter
         // Inflate the layout for this fragment
         return view
