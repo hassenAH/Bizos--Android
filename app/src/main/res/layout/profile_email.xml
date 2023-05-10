@@ -18,12 +18,7 @@
             android:padding="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:padding="2dp"
-                android:src="@drawable/ic_email"
-                android:layout_marginStart="5dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+
             <TextView
                 android:text="Email"
                 android:layout_marginStart="10dp"
