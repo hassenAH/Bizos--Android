@@ -1,6 +1,7 @@
 package devsec.app.RhinhoRealEstates
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputLayout
@@ -21,6 +23,8 @@ import devsec.app.rhinhorealestates.data.models.Categories
 import devsec.app.rhinhorealestates.data.models.New
 import devsec.app.rhinhorealestates.data.models.User
 import devsec.app.rhinhorealestates.data.models.UserTest
+import devsec.app.rhinhorealestates.ui.main.view.LoginActivity
+import devsec.app.rhinhorealestates.ui.main.view.SplashScreenActivity
 import okhttp3.ResponseBody
 
 import retrofit2.Call
@@ -34,6 +38,7 @@ class user_home : Fragment() {
     private lateinit var categorieAdapter: CategoriesAdapter
     private lateinit var userAdapter: UsersAdapter
     lateinit var SearchEditText: EditText
+    lateinit var card: CardView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,11 +50,16 @@ class user_home : Fragment() {
         rvCategories = view.findViewById(R.id.recyclerViewCategorie)
         rvUsers=view.findViewById(R.id.recyclerViewUser)
 
+
         // rvnews.layoutManager = LinearLayoutManager(requireContext())
         val layoutManager = LinearLayoutManager(requireContext())
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         rvCategories.layoutManager = layoutManager
-        categorieAdapter = CategoriesAdapter(listOf()) // create an empty adapter
+        categorieAdapter = CategoriesAdapter(listOf()){
+                cat ->
+            val intent = Intent(requireContext(), AvocatListActivity::class.java)
+            startActivity(intent)
+        } // create an empty adapter
         rvCategories.adapter = categorieAdapter
 
         val layoutManager1 = LinearLayoutManager(requireContext())
@@ -58,6 +68,7 @@ class user_home : Fragment() {
 
         userAdapter = UsersAdapter(listOf())
         rvUsers.adapter = userAdapter
+
         return view
     }
 
@@ -66,7 +77,7 @@ class user_home : Fragment() {
 
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
         retIn.getCategories().enqueue(object : Callback<List<Categories>> {
-            @SuppressLint("SuspiciousIndentation")
+
             override fun onResponse(
                 call: Call<List<Categories>>,
                 response: Response<List<Categories>>
@@ -113,6 +124,7 @@ class user_home : Fragment() {
         }
 
         )
+
     }
 
     companion object {

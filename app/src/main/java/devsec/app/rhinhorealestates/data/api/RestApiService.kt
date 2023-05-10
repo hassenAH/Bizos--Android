@@ -56,6 +56,9 @@ interface RestApiService {
     @GET("/user/allAvocat")
     fun getAvocat(): Call<List<UserTest>>
 
+    @GET("categorie/getbycategorie/{categorie}")
+    fun getAvocatByCategorie(@Body categorie:String): Call<List<UserTest>>
+
     @POST("/user/getnew")
     fun getNewsbySearch(@Body search: String): Call<List<New>>
 

@@ -12,7 +12,7 @@ import devsec.app.RhinhoRealEstates.R
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.data.models.Categories
 
-class CategoriesAdapter (var categories: List<Categories>): RecyclerView.Adapter<CategoriesAdapter.CategorieViewHolder>(){
+class CategoriesAdapter (var categories: List<Categories>, val onItemClick: (Categories) -> Unit): RecyclerView.Adapter<CategoriesAdapter.CategorieViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategorieViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -23,6 +23,7 @@ class CategoriesAdapter (var categories: List<Categories>): RecyclerView.Adapter
     override fun onBindViewHolder(holder: CategorieViewHolder, position: Int) {
         val cat= categories[position]
         holder.bind(cat)
+        holder.itemView.setOnClickListener { onItemClick(cat) }
     }
 
     override fun getItemCount() = categories.size

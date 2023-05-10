@@ -1,0 +1,58 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".AvocatListActivity">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/Search"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:hint="@string/search"
+    app:boxCornerRadiusBottomEnd="20dp"
+    app:boxCornerRadiusBottomStart="20dp"
+    app:boxCornerRadiusTopEnd="20dp"
+    app:boxCornerRadiusTopStart="20dp"
+    app:counterEnabled="true"
+    app:counterMaxLength="30"
+    app:endIconMode="clear_text"
+    app:helperTextTextColor="@color/rosybrown"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toTopOf="parent"
+    app:startIconDrawable="@drawable/ic_baseline_manage_search_24">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SearchinputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    app:layout_constraintBottom_toBottomOf="@id/Search"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Avocatsitem_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

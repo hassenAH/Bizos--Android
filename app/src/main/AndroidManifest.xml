@@ -23,10 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RhinhoRealStates"
         tools:targetApi="31">
+
+
         <activity
             android:name=".ChangePassword"
             android:exported="false"
-            android:theme="@style/Theme.RhinhoRealStatesAB" >
+            android:theme="@style/Theme.RhinhoRealStatesAB">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -46,7 +48,6 @@
             android:name="devsec.app.rhinhorealestates.ui.main.view.MainMenuActivity"
             android:exported="true"
             android:theme="@style/Theme.RhinhoRealStatesAB">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -63,19 +64,22 @@
             android:name="devsec.app.rhinhorealestates.ui.main.view.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.RhinhoRealStatesAB">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name="devsec.app.rhinhorealestates.ui.main.view.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RhinhoRealStatesAB" />
+        <activity
+            android:name="devsec.app.RhinhoRealEstates.AvocatListActivity"
             android:exported="false"
             android:theme="@style/Theme.RhinhoRealStatesAB" />
         <activity
