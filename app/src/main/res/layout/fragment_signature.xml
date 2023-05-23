@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sign="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Signature">
-
+    android:layout_height="match_parent">
 
     <com.kyanogen.signatureview.SignatureView
-
+        xmlns:sign="http://schemas.android.com/apk/res-auto"
         android:id="@+id/signature_view"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        sign:penSize="5dp"
         sign:backgroundColor="#ffffff"
-        sign:enableSignature="true"
-        sign:layout_constraintEnd_toEndOf="parent"
-        sign:layout_constraintStart_toStartOf="parent"
-        sign:layout_constraintTop_toTopOf="parent"
         sign:penColor="#000000"
-        sign:penSize="5dp" />
+        sign:enableSignature="true"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
 
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="clear"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="save"/>
+</LinearLayout>

@@ -34,7 +34,7 @@ class PackAdapter(var Packs: List<Pack>, val fragmentManager: FragmentManager): 
         tvPrix.text = pack.prix.toString() + "$"
 
 
-        // Picasso.get().load(RetrofitClient.URL+"img/"+car.image).into(imageView)
+
         holder.itemView.setOnClickListener{
             navigateToDetails(pack, fragmentManager)
         }

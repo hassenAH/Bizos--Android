@@ -24,6 +24,7 @@ class ProfileHomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_profile_home, container, false)
 
 
+
         return view
     }
 

@@ -48,7 +48,8 @@ class SessionPref {
         role: String,
         firstname: String,
         lastname: String,
-        email: String
+        email: String,
+        image: String
 
 
     )
@@ -59,7 +60,7 @@ class SessionPref {
         editor.putString(USER_lastname, lastname)
         editor.putString(USER_EMAIL, email)
         editor.putString(USER_ROLE, role)
-      //  editor.putString(USER_IMAGE, image)
+        editor.putString(USER_IMAGE, image)
 
         editor.commit()
     }
@@ -95,8 +96,8 @@ class SessionPref {
         user.put(USER_ROLE, pref.getString(USER_ROLE, "role")!!)
         user.put(USER_firstname, pref.getString(USER_firstname, "firstname")!!)
         user.put(USER_lastname, pref.getString(USER_lastname,"lastname")!!)
-        user.put(USER_PHONE, pref.getString(USER_PHONE, "phone")!!)
-//        user.put(USER_IMAGE, pref.getString(USER_IMAGE, null)!!)
+
+        user.put(USER_IMAGE, pref.getString(USER_IMAGE, "f_i_l_e_._j_p_g1669738718307.jpg")!!)
         return user
 
     }
@@ -124,6 +125,26 @@ class SessionPref {
     fun getId(): String {
         return pref.getString(USER_ID, "id")!!
     }
+    fun createLoginSession(
+        id: String,
+        role: String,
+        firstname: String,
+        lastname: String,
+        email: String,
+        image:String
 
+
+    )
+    {
+        editor.putBoolean(IS_LOGGED_IN, true)
+        editor.putString(USER_ID, id)
+        editor.putString(USER_firstname, firstname)
+        editor.putString(USER_lastname, lastname)
+        editor.putString(USER_EMAIL, email)
+        editor.putString(USER_ROLE, role)
+        editor.putString(USER_IMAGE, image)
+
+        editor.commit()
+    }
 
 }

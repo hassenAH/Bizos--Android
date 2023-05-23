@@ -5,7 +5,7 @@
         android:id="@+id/home"
         android:icon="@drawable/home_icon"/>
     <item android:title="Message"
-        android:id="@+id/cart"
+        android:id="@+id/message"
         android:icon="@drawable/ic_baseline_message_24"/>
 
     <item android:title="Profile"

@@ -37,9 +37,9 @@ class CasesFragment : Fragment() {
     ): View? {
             val view = inflater.inflate(R.layout.fragment_cases, container, false)
             rvCases = view.findViewById(R.id.CaseAdapter_recycler_view)
-
+            val fragmentmanager = requireFragmentManager()
             rvCases.layoutManager = LinearLayoutManager(requireContext())
-            caseAdapter = CaseAdapter(listOf()) // create an empty adapter
+            caseAdapter = CaseAdapter(listOf(),fragmentmanager) // create an empty adapter
             rvCases.adapter = caseAdapter
         // Inflate the layout for this fragment
         return view

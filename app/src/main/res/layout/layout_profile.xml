@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_lyt"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="25dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <!-- CHAT LL (VISIBLE ONLY WHEN APT ACCEPTED) -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_chat"
+            android:visibility="gone"
+            android:scaleX="-1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/send"
+            app:tint="@color/orangeToWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test name"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/darkGreyToYellow"
+        android:textSize="24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test speciality"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/darkGreyToYellow"
+        android:textSize="14dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/experienseProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test speciality"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/darkGreyToYellow"
+        android:textSize="14dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test address"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/BGToYellow"
+        android:textSize="12dp" />
+
+    <!-- VISIBLE WHEN APT IS ACCEPTED (APT PRICE) -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="250 TND"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

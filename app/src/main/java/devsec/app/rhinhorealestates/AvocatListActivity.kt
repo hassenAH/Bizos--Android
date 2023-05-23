@@ -13,6 +13,7 @@ import devsec.app.rhinhorealestates.data.models.UserTest
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.math.log
 
 class AvocatListActivity : AppCompatActivity() {
 
@@ -29,14 +30,19 @@ class AvocatListActivity : AppCompatActivity() {
 
         rvUsers = findViewById(R.id.Avocatsitem_recycler_view)
 
+        val catName: String? = intent.getStringExtra("catname")
+        Log.d(TAG, "onCreate: hellooo $catName")
+
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         rvUsers.layoutManager = layoutManager
         usersAdapter = UsersAdapter(listOf())
         rvUsers.adapter = usersAdapter
 
+
+
         val retIn1 = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
-        retIn1.getAvocat().enqueue(object : Callback<List<UserTest>> {
+        retIn1.getAvocatByCategorie(catName!!).enqueue(object : Callback<List<UserTest>> {
             override fun onResponse(call: Call<List<UserTest>>, response: Response<List<UserTest>>) {
                 if (response.isSuccessful) {
                     val users = response.body();

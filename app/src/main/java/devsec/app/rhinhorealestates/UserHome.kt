@@ -10,10 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputLayout
+import devsec.app.RhinhoRealEstates.databinding.ActivityMainMenuBinding
+import devsec.app.RhinhoRealEstates.databinding.FragmentHomeBinding
+import devsec.app.RhinhoRealEstates.databinding.FragmentUserHomeBinding
 import devsec.app.rhinhorealestates.api.RestApiService
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.data.Adapter.CategoriesAdapter
@@ -32,34 +36,34 @@ import retrofit2.Callback
 import retrofit2.Response
 class user_home : Fragment() {
 
-
+    private lateinit var devenirAvocat: TextView
     private lateinit var rvCategories: RecyclerView
     private lateinit var rvUsers: RecyclerView
     private lateinit var categorieAdapter: CategoriesAdapter
     private lateinit var userAdapter: UsersAdapter
     lateinit var SearchEditText: EditText
     lateinit var card: CardView
+    private lateinit var binding:FragmentUserHomeBinding
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_user_home, container, false)
+
         SearchEditText = view.findViewById(R.id.Searchinput1)
         rvCategories = view.findViewById(R.id.recyclerViewCategorie)
         rvUsers=view.findViewById(R.id.recyclerViewUser)
-
+        devenirAvocat = view.findViewById(R.id.devenirAvocat)
 
         // rvnews.layoutManager = LinearLayoutManager(requireContext())
         val layoutManager = LinearLayoutManager(requireContext())
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         rvCategories.layoutManager = layoutManager
-        categorieAdapter = CategoriesAdapter(listOf()){
-                cat ->
-            val intent = Intent(requireContext(), AvocatListActivity::class.java)
-            startActivity(intent)
-        } // create an empty adapter
+        categorieAdapter = CategoriesAdapter(listOf())
+     // create an empty adapter
         rvCategories.adapter = categorieAdapter
 
         val layoutManager1 = LinearLayoutManager(requireContext())
@@ -68,6 +72,12 @@ class user_home : Fragment() {
 
         userAdapter = UsersAdapter(listOf())
         rvUsers.adapter = userAdapter
+
+        devenirAvocat.setOnClickListener {
+            var intent = Intent(requireContext(), DevenirAvocat::class.java)
+            startActivity(intent)
+        }
+
 
         return view
     }
@@ -126,6 +136,7 @@ class user_home : Fragment() {
         )
 
     }
+
 
     companion object {
         private const val TAG = "newsFragment"

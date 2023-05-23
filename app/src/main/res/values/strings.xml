@@ -91,6 +91,28 @@
 
     <string name="hello">"Hello, "</string>
     <string name="mariya_doe">Mariya Doe</string>
+    <string-array name="experience">
 
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="Specialite">
+
+        <item>Social Right</item>
+        <item>Commercial And Business Law</item>
+        <item>Criminal law  Criminal procedure</item>
+        <item>droit civil</item>
+        <item>Civil Right</item>
+
+
+    </string-array>
 
 </resources>

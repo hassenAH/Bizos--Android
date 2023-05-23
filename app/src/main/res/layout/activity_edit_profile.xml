@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageButton
         android:id="@+id/editProfileImage"
         app:shapeAppearanceOverlay="@style/Corners"
         app:srcCompat="@drawable/logo"

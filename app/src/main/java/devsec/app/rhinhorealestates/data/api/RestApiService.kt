@@ -1,6 +1,7 @@
 
 package devsec.app.rhinhorealestates.api
 
+
 import devsec.app.rhinhorealestates.data.api.ChangeRequest
 import devsec.app.rhinhorealestates.data.api.CodeRequest
 import devsec.app.rhinhorealestates.data.api.EmailRequest
@@ -42,7 +43,7 @@ interface RestApiService {
     @POST("user/resetpwd")
     fun generatecode(@Body email: EmailRequest): Call<Unit>
 
-    @GET("user/{id}")
+    @GET("user/profil/{id}")
     fun getUser(@Path("id") id: String): Call<User>
 
     @GET("/user/getNews")
@@ -56,8 +57,11 @@ interface RestApiService {
     @GET("/user/allAvocat")
     fun getAvocat(): Call<List<UserTest>>
 
-    @GET("categorie/getbycategorie/{categorie}")
-    fun getAvocatByCategorie(@Body categorie:String): Call<List<UserTest>>
+    @GET("/user/getAllusers")
+    fun getClient(): Call<List<UserTest>>
+
+    @GET("user/getbycategorie/{categorie}")
+    fun getAvocatByCategorie(@Path("categorie") categorie:String): Call<List<UserTest>>
 
     @POST("/user/getnew")
     fun getNewsbySearch(@Body search: String): Call<List<New>>
@@ -66,7 +70,7 @@ interface RestApiService {
     @PATCH("user/{id}")
     fun updateUser(@Path("id") id: String, @Body user: User): Call<User>
 
-    @DELETE("users/{id}")
+    @DELETE("user/{id}")
     fun deleteUser(@Path("id") id: String): Call<ResponseBody>
 
 
@@ -81,20 +85,28 @@ interface RestApiService {
 
 
 
-    @Multipart
+
     @Headers("Content-Type:application/json")
     @POST("user/updateUser/{id}")
-    fun updatewithimage(
+    fun update(
         @Path("id") id: String,
-        @Part("first_name") firstname: RequestBody,
-        @Part("last_name") last_name: RequestBody,
-        @Part("email") email: RequestBody,
-        @Part image: MultipartBody.Part,
-
+        @Body info: User
         ): Call<ResponseBody>
 
+    @Headers("Content-Type:application/json")
+    @POST("user/UpdateAvocat/{id}")
+    fun updateUserForUpdateAvocat(
+        @Path("id") id: String,
+        @Body info: User
+    ): Call<ResponseBody>
 
 
+    @Multipart
+    @POST("user/uploadfile/{id}")
+    fun uploadImageProfile(
+        @Path("id") id: String,
+        @Part myFile: MultipartBody.Part
+    ): Call<ResponseBody>
 
     @Multipart
     @POST("uploadfile")
@@ -125,6 +137,14 @@ interface RestApiService {
     @Headers("Content-Type:application/json")
     @POST("RendezVous/getbyAvocat/{idAvocat}")
     fun getdatesbyAvocat(@Path("idAvocat") id: String): Call<List<Appointement>>
+
+    @Headers("Content-Type:application/json")
+    @POST("RendezVous/getbyClient/{idUser}")
+    fun getdatesbyClient(@Path("idUser") id: String): Call<List<Appointement>>
+
+    @Headers("Content-Type:application/json")
+    @POST("RendezVous/add")
+    fun addAppointement(@Body info: Appointement): Call<ResponseBody>
 
 }
 

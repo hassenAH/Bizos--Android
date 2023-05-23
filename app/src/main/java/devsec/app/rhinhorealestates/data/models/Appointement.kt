@@ -8,6 +8,10 @@ data  class Appointement (
 
 
     val  idUser :  String ,
-    val  Date:   Date,
-    val  idAvocat:   String
+    val Username: String,
+    val categorie:  String,
+    val  Date:  Date,
+    val  idAvocat:   String,
+    var isExpandable: Boolean = false
+
 )

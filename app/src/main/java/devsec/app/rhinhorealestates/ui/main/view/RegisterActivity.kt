@@ -23,7 +23,7 @@ import retrofit2.Callback
 
 class RegisterActivity : AppCompatActivity() {
     val binding by lazy { ActivityRegisterBinding.inflate(layoutInflater) }
-    lateinit var loginbtn : Button
+
     lateinit var registerbtn : Button
     lateinit var sessionPref: SessionPref
     lateinit var loadingDialog: LoadingDialog
@@ -44,25 +44,26 @@ class RegisterActivity : AppCompatActivity() {
         registerbtn = findViewById<Button>(R.id.RegisterBTN)
 
         registerbtn.setOnClickListener {
-            val username = findViewById<EditText>(R.id.loginEditText)
+            val first_name = findViewById<EditText>(R.id.first_name)
+            val last_name = findViewById<EditText>(R.id.last_name)
             val password = findViewById<EditText>(R.id.passwordInputEditText)
             val verifPass = findViewById<EditText>(R.id.passwordInputEditText2)
             val email = findViewById<EditText>(R.id.emailEditText)
 
-            if (validateRegister(username, password, verifPass, email)) {
-                register(username.text.toString().trim(), password.text.toString().trim(), email.text.toString().trim())}
+            if (validateRegister(first_name,last_name, password, verifPass, email)) {
+                register(first_name.text.toString().trim(),last_name.text.toString().trim(),  password.text.toString().trim(), email.text.toString().trim())}
         }
 
 
 
     }
 
-    private fun register(username: String, password: String, email: String) {
+    private fun register(first_name: String,last_name: String, password: String, email: String) {
         loadingDialog.startLoadingDialog()
 
         val retIn = RetrofitInstance.getRetrofitInstance().create(RestApiService::class.java)
         val id : String = ""
-        val registerInfo = User(id, username, email, password,"")
+        val registerInfo = User(id, first_name, last_name,email, password,"")
 
         retIn.registerUser(registerInfo).enqueue(object :
             Callback<ResponseBody> {
@@ -93,11 +94,11 @@ class RegisterActivity : AppCompatActivity() {
                     val user = jsonObject.get("user")?.asJsonObject
                     if (user != null) {
                         val id_user = user.get("_id").asString
-                        val username_user = user.get("username").asString
+
                         val email_user = user.get("email").asString
                         val first_name = user.get("first_name").asString
                         val last_name = user.get("last_name").asString
-                        sessionPref.createRegisterSession(id_user, first_name,first_name,email_user, "")
+                        sessionPref.createRegisterSession(id_user, "User",first_name,last_name,email_user,"image.png")
 
                         val intent = Intent(this@RegisterActivity, MainMenuActivity::class.java)
                         startActivity(intent)
@@ -118,8 +119,8 @@ class RegisterActivity : AppCompatActivity() {
         })
     }
 
-    public fun validateRegister(username: EditText, password: EditText, verifPass: EditText, email: EditText): Boolean {
-        if (username.text.trim().isEmpty() || password.text.trim().isEmpty() || verifPass.text.trim().isEmpty() || email.text.trim().isEmpty()) {
+    public fun validateRegister(first_name: EditText,last_name: EditText, password: EditText, verifPass: EditText, email: EditText): Boolean {
+        if (first_name.text.trim().isEmpty() ||last_name.text.trim().isEmpty() || password.text.trim().isEmpty() || verifPass.text.trim().isEmpty() || email.text.trim().isEmpty()) {
 
 
 
@@ -141,10 +142,15 @@ class RegisterActivity : AppCompatActivity() {
                 password.requestFocus()
 
             }
+            if (first_name.text.isEmpty()) {
+                first_name.error = "first name  is required"
+                first_name.requestFocus()
 
-            if (username.text.isEmpty()) {
-                username.error = "Username is required"
-                username.requestFocus()
+            }
+
+            if (last_name.text.isEmpty()) {
+                last_name.error = "last name is required"
+                last_name.requestFocus()
 
             }
 

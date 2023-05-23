@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="devsec.app.rhinhorealestates.ui.main.view.LoginActivity">
+    tools:context="devsec.app.rhinhorealestates.ui.main.view.RegisterActivity">
 
 
 
@@ -33,7 +33,7 @@
         android:layout_marginTop="10dp"
 
         android:layout_marginEnd="40dp"
-        android:hint="FullName"
+        android:hint="first_name"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
@@ -65,7 +65,7 @@
         android:layout_marginTop="10dp"
 
         android:layout_marginEnd="40dp"
-        android:hint="FullName"
+        android:hint="last_name"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"

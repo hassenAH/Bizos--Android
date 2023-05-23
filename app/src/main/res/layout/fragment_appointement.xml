@@ -23,11 +23,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Appointment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</ScrollView>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Appointment_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

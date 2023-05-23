@@ -3,7 +3,7 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="yellow">#F2B705</color>
+
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
@@ -15,6 +15,50 @@
     <color name="ourColor">#EF6E60</color>
     <color name="background">#F3F4F8</color>
     <color name="cozy">#EDEDED</color>
+
+    <color name="darkBlue">#425968</color>
+    <color name="darkGrey">#68767C</color>
+    <color name="lightGrey">#e6e6e6</color>
+    <color name="lightBlue">#a3bed8</color>
+    <color name="red">#fc7963</color>
+    <color name="orange">#FFB14A</color>
+    <color name="yellow">#ffeccc</color>
+    <color name="grey">#808080</color>
+    <color name="green">#30D158</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="BGToLB">#425968</color>
+    <color name="BGToWhite">#425968</color>
+    <color name="BGToOrange">#425968</color>
+    <color name="BGToYellow">#425968</color>
+    <color name="yellowToBG">#ffeccc</color>
+    <color name="yellowToLB">#ffeccc</color>
+    <color name="LBToOrange">#a3bed8</color>
+    <color name="LBToYellow">#a3bed8</color>
+    <color name="onlyBlueGray">#425968</color>
+    <color name="onlyYellow">#ffeccc</color>
+    <color name="orangeToBG">#FFB14A</color>
+    <color name="orangeToLG">#FFB14A</color>
+    <color name="orangeToLB">#FFB14A</color>
+    <color name="orangeToWhite">#FFB14A</color>
+    <color name="orangeToYellow">#FFB14A</color>
+    <color name="whiteToBG">#FFFFFFFF</color>
+    <color name="whiteToDarkGrey">#FFFFFFFF</color>
+    <color name="greyToWhite">#808080</color>
+    <color name="redToYellow">#fc7963</color>
+    <color name="whiteToYellow">#FFFFFFFF</color>
+    <color name="navcolor">#CCFFB14A</color>
+    <color name="statusColor">#CCFFB14A</color>
+
+    <color name="yellowToStatus">#ffeccc</color>
+    <color name="nav_selected">#fae4be</color>
+
+    <color name="lightGreyToDarkGrey">#BFe6e6e6</color>
+    <color name="yellowToDarkGrey">#ffeccc</color>
+    <color name="darkGreyToWhite">#68767C</color>
+    <color name="darkGreyToYellow">#68767C</color>
+    <color name="greyToYellow">#808080</color>
+
 
     <color name="black_gradient1">#80000000</color>
     <color name="black_gradient2">#00000000</color>

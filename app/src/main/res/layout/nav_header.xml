@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/editProfileImage"
+        android:id="@+id/navImage"
         app:shapeAppearanceOverlay="@style/Corners"
         app:srcCompat="@drawable/logo"
 

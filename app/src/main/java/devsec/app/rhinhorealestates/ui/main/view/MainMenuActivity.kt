@@ -10,6 +10,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -19,9 +20,9 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.squareup.picasso.Picasso
 import devsec.app.RhinhoRealEstates.*
 import devsec.app.RhinhoRealEstates.databinding.ActivityMainMenuBinding
-import devsec.app.rhinhorealestates.ui.main.fragments.HomeFragment
 import devsec.app.rhinhorealestates.api.RestApiService
 import devsec.app.rhinhorealestates.api.RetrofitInstance
 import devsec.app.rhinhorealestates.utils.services.ConnectivityObserver
@@ -48,7 +49,7 @@ class MainMenuActivity : AppCompatActivity() {
 
     private lateinit var session : SessionPref
     private lateinit var loadingDialog: LoadingDialog
-
+    lateinit var user : HashMap<String, String>
 
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,11 +68,19 @@ class MainMenuActivity : AppCompatActivity() {
         binding = ActivityMainMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loadingDialog = LoadingDialog (this)
-
+        session = SessionPref(this.applicationContext)
+        user = session.getUserPref()
         // Drawer
         drawerLayout = findViewById(R.id.drawerLayout)
         navigationView = findViewById(R.id.nav_view)
-
+        if (session.getUserPref().get(SessionPref.USER_ROLE).toString()=="Avocat"){
+        navigationView.menu.clear() // Clear the current menu
+        navigationView.inflateMenu(R.menu.side_nav_menu)}
+        else
+        {
+            navigationView.menu.clear() // Clear the current menu
+            navigationView.inflateMenu(R.menu.side_nav_menu_user)
+        }
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
@@ -88,6 +97,7 @@ class MainMenuActivity : AppCompatActivity() {
                     startActivity(intent)
                     drawerLayout.closeDrawer(navigationView)
                 }
+
                 R.id.nav_MyAppointment -> replaceFragment(Appointement())
                 R.id.nav_myPacks -> replaceFragment(packs())
                 R.id.nav_MyCases -> replaceFragment(CasesFragment())
@@ -124,9 +134,13 @@ class MainMenuActivity : AppCompatActivity() {
             }
             true
         }
-        session = SessionPref(this.applicationContext)
 
+        val image = user.get(SessionPref.USER_IMAGE).toString()
+        val headerView = navigationView.getHeaderView(0)
+        val imageV= headerView.findViewById<ImageView>(R.id.navImage)
+        val url = RetrofitInstance.BASE_IMG+image
 
+        Picasso.get().load(url).into(imageV)
         val navDrawerButton = findViewById<Button>(R.id.menu)
         navDrawerButton.setOnClickListener {
             drawerLayout.open()
@@ -154,9 +168,18 @@ class MainMenuActivity : AppCompatActivity() {
 
                     true
                 }
-
+R.id.message ->{
+    val chatFragment = chatUsers()
+    supportFragmentManager.beginTransaction()
+        .replace(R.id.fragments_container, chatFragment)
+        .addToBackStack(null)
+        .commit()
+    drawerLayout.closeDrawer(navigationView)
+    true
+}
 
                 R.id.profile -> {
+
                     val profileFragment = ProfileHomeFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragments_container, profileFragment)

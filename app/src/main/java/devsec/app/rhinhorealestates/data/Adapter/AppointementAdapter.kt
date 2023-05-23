@@ -7,7 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import devsec.app.rhinhorealestates.data.models.Appointement
 import devsec.app.RhinhoRealEstates.R
-import devsec.app.rhinhorealestates.data.models.Case
+
+import java.text.SimpleDateFormat
+
 
 class appointementAdapter(var appointements: List<Appointement>): RecyclerView.Adapter<appointementAdapter.AppointementViewHolder>(){
 
@@ -18,8 +20,8 @@ class appointementAdapter(var appointements: List<Appointement>): RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: AppointementViewHolder, position: Int) {
-        val appointement= appointements[position]
-        holder.bind(appointement)
+        val app= appointements[position]
+        holder.bind(app)
     }
 
     override fun getItemCount() = appointements.size
@@ -30,20 +32,22 @@ class appointementAdapter(var appointements: List<Appointement>): RecyclerView.A
         private val nameAndLastName: TextView = itemView.findViewById(R.id.nameAndLastName)
         private val Date: TextView = itemView.findViewById(R.id.Date)
 
+        private val Cat: TextView = itemView.findViewById(R.id.categ)
 
 
 
 
 
 
-
-        fun bind(appointement: Appointement) {
-
+        fun bind(ap: Appointement) {
 
 
-                nameAndLastName.text = appointement.idUser
-            Date.text= appointement.Date.toString();
 
+                nameAndLastName.text = ap.Username.toString();
+
+            val formatter = SimpleDateFormat("yyyy-MM-dd")
+            Date.text= formatter.format(ap.Date)
+            Cat.text= ap.categorie
 
 
 
